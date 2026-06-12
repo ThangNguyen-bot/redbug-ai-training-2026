@@ -21,18 +21,18 @@
 
 **Sample email for live anonymization:**
 ```
-Từ: qc@songliufactory.vn
+Từ: qc@sunrisemfg.example
 Gửi: team@redbugvietnam.com
 Chủ đề: Cập nhật lỗi đơn hàng RB-2026-447 (Style SLP-8801)
 
 Team Redbug,
 Tôi muốn cập nhật về tình trạng lô hàng Sleeping Bag theo đơn PO-RB2026-447 cho khách hàng GoldBug US.
-Factory Song Liu đã xử lý 60% lô hàng...
+Sunrise Manufacturing đã xử lý 60% lô hàng...
 ```
 
 **What to do on screen:**
 1. Paste email mẫu vào Notepad
-2. Ctrl+F → Replace All: "Song Liu" → "Factory A" → Enter → OK
+2. Ctrl+F → Replace All: "Sunrise Manufacturing" → "Factory A" → Enter → OK
 3. Ctrl+F → Replace All: "RB-2026-447" → "PO-XXXX"
 4. Ctrl+F → Replace All: "SLP-8801" → "Style-XXXX"
 5. Ctrl+F → Replace All: "GoldBug US" → "Customer Y"
@@ -219,6 +219,8 @@ Hãy:
 - **Copy sẵn toàn bộ WF5 data block trước khi vào phòng**
 - Suggested: Kim Thoa chạy Prompt 4 (quotation), Thiên Kim chạy Prompt 6 (email GoldBug)
 - Lưu ý: Toàn bộ 7 prompts chạy trong CÙNG một session — đừng đóng tab
+- **Prompts 5+6 chạy liên tiếp không nghỉ** (~8–10 phút gộp) — đây là "management report moment"
+- **Prompt 7 là OPTIONAL** — cắt bỏ nếu đã hơn 15:00, chuyển sang hands-on hoặc Debrief
 
 ---
 
@@ -279,7 +281,12 @@ Từ bảng Quotation Comparison sau (giá đã ẩn danh với USD XXX), hãy:
 **What to say:**
 > "Bảng so sánh báo giá này — Kim Thoa làm bảng tháng nào cũng mất bao lâu? AI làm trong 20 giây. Và có thêm risk recommendation luôn."
 
+> ⭐ **DỪNG LẠI Ở ĐÂY.** Để bảng trên màn hình, không tiếp tục ngay. Hỏi Kim Thoa: *"Bảng này so với bảng bạn đang dùng hàng tháng — khác gì?"* Đợi ít nhất 2 phản hồi từ phòng trước khi chạy Prompt 5.
+
 ---
+
+> 🔔 **BACKUP — Kiểm tra trước khi chạy Prompt 5:**
+> Nếu AI không nhắc lại được dữ liệu trước đó (quên tên nhà máy, quên số liệu), hãy **paste lại toàn bộ WF5 data block** (Sample Tracker + Order Progress + Defect Summary + Quotation) trước khi gõ Prompt 5. Session dài có thể làm AI mất context — paste lại là bình thường và nhanh.
 
 ### Prompt 5 — Full Monthly Report (5 phút)
 ```
@@ -306,7 +313,7 @@ Từ dữ liệu tháng 6 và Executive Summary vừa tạo, viết email tiến
 
 ---
 
-### Prompt 7 — Internal Summary Email (3 phút)
+### Prompt 7 — Internal Summary Email (3 phút) *(OPTIONAL — cắt nếu đã hơn 15:00)*
 ```
 Từ executive summary vừa tạo, viết email nội bộ tiếng Việt ngắn gọn gửi team Redbug:
 - Những gì đang tốt

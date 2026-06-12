@@ -1,6 +1,6 @@
-# Redbug AI Training v1.3 – Slide Outline (Workflow-Based)
-> Ngày 16/06/2026 | Tổng **29 slides chính** + 5 slides Appendix | 08:45 – 17:30
-> v1.3 changes: Role-based → workflow-based; Thêm Slide Anonymization Protocol; WF1–WF6 demos; Office Admin → Appendix A1; GoldBug Brand → Appendix A2
+# Redbug AI Training v1.4 – Slide Outline (Workflow-Based)
+> Ngày 16/06/2026 | Tổng **27 slides chính** + 4 slides Appendix | 08:45 – 17:30
+> v1.5 changes: Module 2 gộp Slides 8+9 → 2 slides; Module 5 gộp Slides 16+17 → 5 slides; Appendix A2 GoldBug Brand removed; Appendix renumbered A1–A4; tiêu đề v1.4
 
 ---
 
@@ -12,12 +12,12 @@
 > 16/06/2026
 
 Agenda trong ngày:
-- Buổi sáng: Security + Anonymization + Prompt Basics + WF1 + WF2 Demos
-- Buổi chiều: WF3 + WF4 Demos + WF5 Monthly Dashboard ⭐ + WF6 Training Material
+- Buổi sáng: Security + Anonymization + Prompt Basics + WF1 + WF2 + WF3 Demos
+- Buổi chiều: WF4 Demo + Bridge + WF5 Monthly Dashboard ⭐ + WF6 Training Material
 - Thực hành nhóm + Chốt Pilot
 - Cam kết: Ra về với ít nhất 1 pilot thực tế
 
-**Slide 2 – Những gì team muốn giải quyết (từ 7 phản hồi khảo sát)**
+**Slide 2 – Những gì team muốn giải quyết (từ 8 phản hồi khảo sát)**
 > *(anonymous — không hiển thị tên cá nhân hay điểm số)*
 
 Top nhu cầu nổi lên từ khảo sát:
@@ -51,7 +51,7 @@ Top nhu cầu nổi lên từ khảo sát:
 |---|---|---|
 | PO thật, giá FOB/margin/cost sheet, hợp đồng, audit finding nhạy cảm, thông tin cá nhân (email/phone) | Tên nhà máy → "Factory A" / Mã hàng → "Style-XXXX" / Tên khách hàng → "Customer X" / PO thật → "PO-XXXX" / Giá/cost → "[PRICE REMOVED]" | Quy trình chung, template trống, email thông thường đã anonymize, hỏi về kỹ thuật/chuyên môn không có dữ liệu nhạy cảm |
 
-**Slide 5 – Bước Ẩn Danh Hóa Tài Liệu Trước Khi Dùng AI** *(Slide mới v1.3)*
+**Slide 5 – Bước Ẩn Danh Hóa Tài Liệu Trước Khi Dùng AI**
 > "Trước khi paste bất kỳ file / email / report nào vào AI — làm theo 3 bước này:"
 
 **Bước 1:** Copy nội dung vào một document mới (KHÔNG sửa file gốc)
@@ -82,19 +82,18 @@ Top nhu cầu nổi lên từ khảo sát:
 > "Quy tắc này không phải để cấm. Là để bảo vệ bạn và Redbug."
 > "Ẩn → Copy → Paste → Dùng thoải mái."
 
-*(Facilitator note: Nếu được hỏi về ChatGPT Free vs Plus → xem Appendix A3)*
+*(Facilitator note: Nếu được hỏi về ChatGPT Free vs Plus → xem Appendix A2)*
 
 ---
 
-## Module 2 – Prompt Basics (Slides 8–10) | 09:50 – 10:20
+## Module 2 – Prompt Basics (Slides 8–9) | 09:50 – 10:20
 
-**Slide 8 – AI không đọc được suy nghĩ của bạn**
+**Slide 8 – Công thức Prompt: AI không đọc suy nghĩ → Công thức Chuẩn + Starter**
 - Kết quả tốt = Input tốt
 - [So sánh trực quan: Prompt mơ hồ → output chung chung | Prompt rõ → output Redbug-specific]
 - Ví dụ: "Viết email" vs "Đóng vai QC, viết email tiếng Anh yêu cầu Factory A làm CAPA cho lỗi đứt chỉ, tone chuyên nghiệp, dưới 150 từ."
 
-**Slide 9 – Công thức Prompt Chuẩn + Starter Prompt**
-> **Role + Task + Context + Output + Constraints**
+**→ Công thức: Role + Task + Context + Output + Constraints**
 
 Bảng ví dụ 1 dòng cho mỗi thành phần (dùng tình huống QC hoặc QA thật của Redbug):
 - Role: "Tôi là QC Inspector tại Redbug Vietnam..."
@@ -106,16 +105,16 @@ Bảng ví dụ 1 dòng cho mỗi thành phần (dùng tình huống QC hoặc Q
 **→ Thực hành ngay (5 phút): Mỗi người tự điền Starter Prompt theo vai trò.**
 > "Từ bây giờ, tôi là [Vai trò] tại Redbug Vietnam..."
 
-**Slide 10 – Khi AI trả lời chưa đúng ý: 3 cách sửa nhanh**
+**Slide 9 – Khi AI trả lời chưa đúng ý: 3 cách sửa nhanh**
 1. Thêm Constraint: "Viết ngắn hơn / bằng tiếng Anh / dạng bảng / tone chuyên nghiệp"
 2. Cho ví dụ: "Ví dụ output tôi muốn: [dán mẫu]"
 3. Yêu cầu lại: "Thử lại nhưng ngắn hơn 50% và thêm cột Deadline"
 
 ---
 
-## Module 3 – Workflow Demos Buổi Sáng (Slides 11–13) | 10:30 – 12:00
+## Module 3 – Workflow Demos Buổi Sáng (Slides 10–12) | 10:30 – 12:00
 
-**Slide 11 – Workflow Demo 1: Long Email / Manual / Tech Pack Summary Assistant**
+**Slide 10 – Workflow Demo 1: Long Email / Manual / Tech Pack Summary Assistant**
 *Dành cho: Tất cả — đặc biệt QC Inspector, QA/QC Manager, PD, Merchandiser*
 
 - **Tình huống:** Chuỗi email 8 tin nhắn từ nhà máy về trễ tiến độ + thay đổi nguyên liệu. Cần tóm tắt ngay trong 2 phút.
@@ -125,7 +124,7 @@ Bảng ví dụ 1 dòng cho mỗi thành phần (dùng tình huống QC hoặc Q
 - **Hands-on:** Mỗi người tự chạy với email thread giả lập
 - **Safety reminder:** ⚠️ Ẩn tên nhà máy, vendor, mã PO trước khi paste
 
-**Slide 12 – Workflow Demo 2: Tech Pack / Data Pack / DCL Comparison Assistant**
+**Slide 11 – Workflow Demo 2: Tech Pack / Data Pack / DCL Comparison Assistant**
 *Dành cho: PD (Hải Yến, Sandra), Footwear Quality (Kim Thoa), QA/QC (Xuân Trâm)*
 
 - **Tình huống:** Nhận Tech Pack revision mới từ US. Cần tìm nhanh những gì thay đổi mà không đọc lại toàn bộ file.
@@ -135,16 +134,7 @@ Bảng ví dụ 1 dòng cho mỗi thành phần (dùng tình huống QC hoặc Q
 - **Hands-on:** Hải Yến / Kim Thoa / Xuân Trâm tự chạy
 - **Safety reminder:** ⚠️ Ẩn style number, customer name, PO trước khi paste DCL/Tech Pack thật
 
-**Slide 13 – Break mindset + Q&A sáng**
-> "AI không thay thế bạn. AI làm bản nháp — bạn làm chuyên gia."
-- 5 phút hỏi đáp tự do
-- *(Facilitator: Nếu hỏi upload PDF → xem Appendix A4)*
-
----
-
-## Module 4 – Workflow Demos Buổi Chiều (Slides 14–16) | 13:15 – 14:15
-
-**Slide 14 – Workflow Demo 3: Inspection Report + Defect Description Assistant**
+**Slide 12 – Workflow Demo 3: Inspection Report + Defect Description Assistant**
 *Dành cho: QC Inspector (Lan Anh, Khánh Linh), QA/QC Manager (Xuân Trâm), PD (Sandra)*
 
 - **Tình huống:** Vừa đi kiểm hàng về, có ghi chú tay lộn xộn. Cần viết Inspection Report tiếng Anh chuẩn + mô tả defect chính xác trong 10 phút.
@@ -155,7 +145,11 @@ Bảng ví dụ 1 dòng cho mỗi thành phần (dùng tình huống QC hoặc Q
 - **Hands-on:** Lan Anh / Khánh Linh tự chạy
 - **Safety reminder:** ⚠️ PO-XXXX và Factory A đã thay thế. Khi dùng data thật: Ctrl+F replace trước khi paste.
 
-**Slide 15 – Workflow Demo 4: CAPA / Root Cause / Factory Risk Assistant**
+---
+
+## Module 4 – Workflow Demos Buổi Chiều (Slides 13–15) | 13:15 – 14:05
+
+**Slide 13 – Workflow Demo 4: CAPA / Root Cause / Factory Risk Assistant**
 *Dành cho: QA/QC Manager (Xuân Trâm), Footwear Quality (Kim Thoa)*
 
 - **Tình huống:** Factory A gửi CAPA cho lỗi đứt chỉ tăng 3 tháng liên tiếp với nội dung: "Sẽ nhắc công nhân cẩn thận hơn."
@@ -166,17 +160,26 @@ Bảng ví dụ 1 dòng cho mỗi thành phần (dùng tình huống QC hoặc Q
 - **Hands-on:** Xuân Trâm tự chạy với CAPA đã anonymize
 - **Safety reminder:** ⚠️ Ẩn tên nhà máy → Factory A, mã PO → PO-XXXX
 
-**Slide 16 – Kết nối các Workflow Demos**
+**Slide 14 – Break mindset + Q&A sáng** *(chiều)*
+> "AI không thay thế bạn. AI làm bản nháp — bạn làm chuyên gia."
+- 5 phút hỏi đáp tự do
+- *(Facilitator: Nếu hỏi upload PDF → xem Appendix A3)*
+
+**Slide 15 – Kết nối các Workflow Demos + Bridge sang WF5**
 > "WF1 tóm tắt email → WF3 viết report → WF4 theo dõi CAPA → WF5 tổng hợp thành dashboard tháng."
 
 [Sơ đồ luồng: Email → Summary (WF1) → Inspection Report (WF3) → CAPA (WF4) → Monthly Dashboard (WF5)]
 
+> "Demo tiếp theo là lý do mình thiết kế training hôm nay."
+
+*(Bridge: 8–10 phút — không kéo dài hơn 14:05)*
+
 ---
 
-## Module 5 – Workflow Demo 5 ⭐ Monthly Dashboard (Slides 17–22) | 14:15 – 15:15
+## Module 5 – Workflow Demo 5 ⭐ Monthly Dashboard (Slides 16–20) | 14:05 – 15:00
 
-**Slide 17 – WF5: Tại sao demo này khác?**
-> "Demo này được thiết kế từ nhu cầu thật của 5/7 người khảo sát — không phải ví dụ chung chung."
+**Slide 16 – WF5: Tại sao demo này khác + Giới thiệu dữ liệu**
+> "Demo này được thiết kế từ nhu cầu thật của 5/8 người khảo sát — không phải ví dụ chung chung."
 
 Bảng pain point → giải pháp (từ survey):
 - Báo cáo tháng tốn 2–3h thủ công → WF5 Bước 5: 5 phút
@@ -184,7 +187,6 @@ Bảng pain point → giải pháp (từ survey):
 - Bảng so sánh báo giá → WF5 Bước 4: 20 giây
 - Email tóm tắt gửi GoldBug US → WF5 Bước 6
 
-**Slide 18 – Dữ liệu giả lập (anonymized) tháng 6**
 > "Đây là loại data bạn đang có mỗi tháng — hôm nay dùng bản giả lập."
 
 [Hiển thị tóm tắt 4 bảng: Sample Tracker / Order Progress / Defect Summary / Quotation]
@@ -192,25 +194,27 @@ Bảng pain point → giải pháp (từ survey):
 - Tất cả tên style → Style-XXXX
 - Tất cả giá → [PRICE REMOVED]
 
-**Slide 19 – Bước 1+2: Sample Priority + Order Progress Summary**
+**Slide 17 – Bước 1+2: Sample Priority + Order Progress Summary**
 - Prompt 1 live (Facilitator demo trên màn hình)
 - Kết quả: Bảng Priority / Overdue / At-Risk
 - Prompt 2 live → Order Risk Level + shipping timeline
 
-**Slide 20 – Bước 3: Defect Trend + Factory Risk Ranking**
+**Slide 18 – Bước 3: Defect Trend + Factory Risk Ranking**
 - Prompt 3 live — **Kim Thoa hoặc Xuân Trâm tự chạy**
 - Kết quả: Factory Risk Ranking + Top defects + nhận xét 100 từ tiếng Anh
 
-**Slide 21 – Bước 4+5: Quotation Comparison ⭐ + Monthly Report**
+**Slide 19 – Bước 4+5 ⭐: Quotation Comparison + Monthly Report**
 > "Bình thường bảng so sánh báo giá mất bao lâu? AI làm trong 20 giây."
 
-- Prompt 4 live — **Kim Thoa tự chạy**
-- Prompt 5 live → Monthly report outline đầy đủ
-- ⚠️ Nhắc: Dùng cùng session, không đóng tab. Nếu mất session → dùng Prompt 5 Fallback.
+- Prompt 4 live — **Kim Thoa tự chạy** ⭐ **DỪNG LẠI — moment chính của buổi**
+- Hỏi Kim Thoa: "Bảng này so với bảng bạn đang dùng hàng tháng — khác gì?" — đợi phản hồi phòng
+- Prompt 5 live → Monthly report outline đầy đủ *(check: nếu AI mất context → paste lại WF5 data block trước)*
+- ⚠️ Nhắc: Dùng cùng session, không đóng tab.
 
-**Slide 22 – Bước 6+7: Email to GoldBug US + Email nội bộ + Debrief**
-- Prompt 6 live → Email tiếng Anh ~200 từ gửi GoldBug US
-- Prompt 7 live → Email nội bộ tiếng Việt
+**Slide 20 – Bước 6+7: Email to GoldBug US + Email nội bộ + Debrief**
+- Prompt 5+6 chạy liên tiếp (~8–10 phút) — "management report moment"
+- Prompt 6 live → Email tiếng Anh ~200 từ gửi GoldBug US — **Thiên Kim tự chạy**
+- Prompt 7 *(optional — cắt nếu hơn 15:00)* → Email nội bộ tiếng Việt
 - **Debrief 3 câu:**
   1. "Kim Thoa: Bạn tiết kiệm được bao nhiêu thời gian so với làm tay?"
   2. "Output có dùng làm nền cho báo cáo tháng 6 thật không?"
@@ -218,10 +222,11 @@ Bảng pain point → giải pháp (từ survey):
 
 ---
 
-## Module 6 – Workflow Demo 6: Training Material (Slide 23) | 15:15 – 15:35
+## Module 6 – Workflow Demo 6: Training Material (Slide 21) | 15:10 – 15:25
 
-**Slide 23 – Workflow Demo 6: Training Material Presentation Assistant**
+**Slide 21 – Workflow Demo 6: Training Material Presentation Assistant**
 *Dành cho: Thiên Kim, PD, QA/QC Manager — nếu cần tạo nội dung đào tạo nội bộ hoặc cho nhà máy*
+*(Optional — cắt bỏ và chuyển thẳng sang Module 7 nếu chưa xong WF4 trước 14:00)*
 
 - **Tình huống:** Cần tạo slide training ngắn cho team nhà máy về quy trình FRI mới (5–7 slides).
 - **Input:** Fictional process description (đã anonymize)
@@ -231,11 +236,13 @@ Bảng pain point → giải pháp (từ survey):
 - **Hands-on:** 10 phút tự thử — ai muốn chạy thì chạy ngay
 - **Safety reminder:** ⚠️ Không đưa giá cả, thông tin nhạy cảm vào tài liệu training gửi nhà máy
 
+> ⚠️ **QUY TẮC CẮT:** Nếu chưa xong WF4 (Slide 13) trước 14:00 → bỏ qua WF6 (Slide 21), đi thẳng vào WF5 lúc 14:05.
+
 ---
 
-## Module 7 – Thực hành + Chốt Pilot (Slides 24–29) | 15:35 – 17:30
+## Module 7 – Thực hành + Chốt Pilot (Slides 22–27) | 15:30 – 17:30
 
-**Slide 24 – Thực hành Tự do theo Nhóm (50 phút)**
+**Slide 22 – Thực hành Tự do theo Nhóm (20–25 phút)**
 
 | Nhóm | Thành viên | Workflow tập trung |
 |---|---|---|
@@ -247,13 +254,13 @@ Bảng pain point → giải pháp (từ survey):
 Hướng dẫn:
 - Chọn 1 việc thật từ tuần này (đã ẩn thông tin nhạy cảm trước)
 - Dùng 1 prompt từ Workflow Prompt Starters hoặc Prompt Library
-- Sẵn sàng chia sẻ kết quả sau 45 phút
+- Sẵn sàng chia sẻ kết quả sau 20 phút
 
-**Slide 25 – Gallery Share: 2–3 nhóm chia sẻ output**
+**Slide 23 – Gallery Share: 2–3 nhóm chia sẻ output**
 - Mỗi nhóm 2 phút: Output gì? AI làm tốt điểm nào? Cần sửa gì?
 - Không cần hoàn hảo — chia sẻ cả khi AI trả lời chưa đúng
 
-**Slide 26 – Pilot Shortlist v1.3: Chọn pilot của bạn**
+**Slide 24 – Pilot Shortlist v1.4: Chọn pilot của bạn**
 
 | Pilot | Người phụ trách | Workflow | Timeline |
 |---|---|---|---|
@@ -262,21 +269,25 @@ Hướng dẫn:
 | Final Inspection Report + Defect Description | Hải Yến, Sandra | WF3 | Lần kiểm hàng tiếp theo |
 | Long Technical Email / Manual Summary | Lan Anh + QC team | WF1 | Ngay tuần sau |
 | DCL Comparison + CAPA / Factory Risk | Xuân Trâm | WF2, WF4 | Khi nhận DCL mới |
-| Office Admin Assistant | Hạnh | WF7 | **Pending — sau khi nhận survey response** |
+| Invoice Email / PDF Extraction + Expense Recording | Hạnh | WF7 | **Áp dụng ngay sau training ✅** |
 
-**Slide 27 – Cam kết Pilot**
+**Slide 25 – Cam kết Pilot + Lịch Check-in**
 - Mỗi người chọn ít nhất 1 pilot — ghi vào tracker ngay
-- Lịch check-in: 20/06 (Zalo/Slack), 23/06 (họp 15p), 30/06 (tổng kết)
 - "Không để ai về mà chưa chọn."
 
-**Slide 28 – Recap: 5 điều mang về hôm nay**
+Lịch check-in (nhắc lại):
+- **20/06 (Thứ 6):** Báo cáo ngắn qua Zalo — đã thử chưa? kết quả?
+- **23/06 (Thứ 2):** Họp 15 phút chia sẻ kết quả đầu tiên
+- **30/06 (Thứ 2):** Tổng kết 2 tuần pilot
+
+**Slide 26 – Recap: 5 điều mang về hôm nay**
 1. Quy tắc RED/YELLOW/GREEN + Anonymization Protocol — làm việc với AI an toàn
 2. Prompt Formula — ra lệnh cho AI hiệu quả
-3. 6 Workflow Demos phù hợp công việc thực tế Redbug
+3. 7 Workflow Demos phù hợp công việc thực tế Redbug (WF0–WF6, WF7 trong Appendix)
 4. Pilot cam kết trong 2 tuần
 5. Workflow Prompt Starters + Demo guides để tham khảo bất cứ lúc nào
 
-**Slide 29 – Closing**
+**Slide 27 – Closing**
 > "AI không làm thay bạn. Nhưng AI + bạn sẽ nhanh hơn và tốt hơn bạn một mình."
 
 - Website training: https://redbug-ai-training-2026.vercel.app/
@@ -287,34 +298,32 @@ Hướng dẫn:
 
 ## Appendix – Slides dự phòng (không trình chiếu trừ khi có câu hỏi hoặc còn thời gian)
 
-**Slide A1 – Office Admin Assistant (Mini-Demo)**
-*Dành cho Hạnh — nếu còn thời gian hoặc Hạnh đã gửi survey response*
+**Slide A1 – WF7: Office Admin Invoice Processing (Optional Mini-Demo — 10 phút) ✅**
+*Hạnh confirmed (v1.4) | Chạy sau WF5 nếu còn thời gian, hoặc trong buổi chiều hands-on*
 
-- Tình huống: Lịch trình 1 ngày thăm 2 nhà máy Bình Dương
-- Prompt: "Đóng vai Office Manager, lên lịch trình di chuyển chi tiết cho chuyến đi..."
-- 2 phiên bản: tiếng Anh cho khách US, tiếng Việt cho tài xế
-- *(Pilot WF7 cho Hạnh sẽ khởi động sau khi nhận survey response)*
+> ⚠️ **Lưu ý bảo mật:** Không cho AI quét toàn bộ inbox. Chỉ xử lý email hóa đơn đã được Hạnh lọc thủ công. Với email automation, chỉ bắt đầu từ những email người dùng đã tự chọn/lọc trước. Không cấp cho AI quyền truy cập hoặc quét toàn bộ inbox.
 
-**Slide A2 – GoldBug Brand & Product Assistant (Mini-Demo)**
-*Nếu còn thời gian — cho PD, Merch, Country Manager*
+- **Tình huống:** Hạnh nhận email hóa đơn văn phòng phẩm từ Vendor X. Cần: trích xuất thông tin hóa đơn, tạo dòng bảng ghi nhận chi phí, đặt tên file theo chuẩn.
+- **Input demo:** Fictional invoice email (xem `content/12_synthetic_demo_data.md` — WF7-A)
+- **Prompt demo:**
+  > "Đây là email hóa đơn từ nhà cung cấp (tôi đã chọn email này thủ công). Hãy trích xuất thông tin hóa đơn, tạo 1 dòng bảng ghi nhận chi phí, và gợi ý tên file chuẩn theo format YYYYMMDD_VendorX_InvoiceNo_Amount.pdf. [Paste nội dung email]"
+- **Expected output:** Bảng trích xuất hóa đơn + 1 dòng expense record + tên file gợi ý
+- **Demo thảo luận:** Tại sao không paste toàn inbox? → Hiển thị WF7-F security contrast (5-step staged workflow)
+- **Pilot WF7:** Hạnh áp dụng với email hóa đơn thật sau training — data chuẩn bị trong `12_synthetic_demo_data.md`
 
-- Tình huống: Brainstorm stroller accessories mới có thể sản xuất tại VN
-- Prompt: "Đóng vai Giám đốc PD của GoldBug, đề xuất 3 ý tưởng phụ kiện xe đẩy mới..."
-- Debrief: Ý tưởng AI có khả thi với nhà máy VN không?
-
-**Slide A3 – ChatGPT vs Claude vs Gemini: Tool nào phù hợp?**
+**Slide A2 – ChatGPT vs Claude vs Gemini: Tool nào phù hợp?**
 - So sánh ngắn + khuyến nghị cho Redbug
+- ChatGPT Free: Custom Instructions (miễn phí) / Custom GPT: cần Plus/Team
 - [Điền sau khi xác nhận team đang dùng tool gì — show-of-hands đầu buổi]
 
-**Slide A4 – Làm việc với file PDF Tech Pack**
+**Slide A3 – Làm việc với file PDF Tech Pack**
 - Cách copy text từ PDF vào AI (không cần upload file)
 - Lưu ý bảo mật: không paste tech pack có giá / PO thật
 
-**Slide A5 – Advanced Prompting + AI đọc hình ảnh defect**
+**Slide A4 – Advanced Prompting + AI đọc hình ảnh defect**
 - Chain prompting: output Prompt 1 làm input Prompt 2
 - Upload ảnh defect → AI mô tả lỗi bằng tiếng Anh (cần tài khoản Plus/Pro)
 
 ---
 
-*v1.3 | Workflow-based revision | 29 slides chính + 5 Appendix | Cập nhật 12/06/2026*
-*Key changes: role-based → workflow-based framing; Slide 5 Anonymization Protocol mới; WF1–WF6 demos; Office Admin → Appendix A1; GoldBug Brand → Appendix A2*
+*v1.5 | 27 slides chính + 4 Appendix | Cập nhật 12/06/2026 | WF3 moved to morning block; Module 2 merged to 2 slides; WF5 merged to 5 slides*

@@ -2,9 +2,30 @@
 > 16/06/2026 | 8 Persona System Prompts | Tương thích với ChatGPT Custom GPT, Claude Projects, Gemini Gems
 
 Cách dùng: Copy toàn bộ System Prompt bên dưới → Paste vào:
-- **ChatGPT:** Settings → Customize ChatGPT → "Custom Instructions" (hoặc tạo Custom GPT mới)
+- **ChatGPT:** Settings → Customize ChatGPT → "Custom Instructions"
+  *(Nếu dùng ChatGPT Free: dùng Custom Instructions hoặc paste persona prompt vào đầu cuộc chat. Không cần tạo Custom GPT — Custom GPT yêu cầu tài khoản Plus/Team trả phí.)*
 - **Claude:** Projects → "Project Instructions"
 - **Gemini:** Gems → "Gem instructions"
+
+> **Lưu ý về ngôn ngữ system prompt:** Các system prompt trong file này được viết bằng tiếng Anh để AI hoạt động chính xác và nhất quán hơn. Sau khi setup xong, bạn vẫn chat với AI bằng tiếng Việt hoặc tiếng Anh tùy ý — không ảnh hưởng đến chất lượng output.
+
+---
+
+## Thứ tự setup được khuyến nghị
+
+**Setup ngay trong / sau buổi training:**
+- **Persona 4 — Inspection Report & Defect Description Assistant** (WF3): Dùng ngay cho QC Inspector và QA. High-frequency, high-impact.
+- **Persona 6 — Monthly Operations Dashboard Assistant** (WF5): Dùng ngay cho Kim Thoa và Thiên Kim. Đây là wow demo của training.
+
+**Setup sau khi cần (không cần làm ngay hôm 16/06):**
+- Persona 1 — Redbug AI Safety Coach (WF0): Tham khảo khi onboard người mới
+- Persona 2 — Long Email & Action Summary (WF1): Setup khi muốn AI nhớ style tóm tắt của bạn
+- Persona 3 — Tech Pack / DCL Review (WF2): Setup cho PD và QA/QC
+- Persona 5 — CAPA / Root Cause / Factory Risk (WF4): Setup cho Xuân Trâm sau training
+- Persona 7 — Training Material Presentation (WF6): Setup cho Thiên Kim khi cần làm slide
+- Persona 8 — Office Admin Invoice & Expense (WF7): Setup cho Hạnh sau pilot đầu tiên
+
+> **Khi Persona 1 (Safety Coach) từ chối xử lý:** Đây là hành vi đúng — AI đang bảo vệ bạn. Làm theo hướng dẫn: anonymize document → paste lại → AI sẽ giúp tiếp.
 
 ---
 
