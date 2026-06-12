@@ -1,5 +1,5 @@
-# Redbug AI Training v1.1 - Demo & Exercise Pack
-> Cập nhật: Tháng 6/2026 | Thêm Demo 7 (Monthly Tech/Quality/Sample Report) dựa trên survey
+# Redbug AI Training v1.3 - Demo & Exercise Pack
+> Cập nhật: 12/06/2026 | v1.3: Chuyển sang Workflow-Based Framework (WF0–WF6) dựa trên survey 7/11 phản hồi
 
 **Format chung mỗi Demo:** Objective → Business Situation → Input Data (giả lập) → Participant Task → Prompt Thực hành → Debrief
 
@@ -303,4 +303,8 @@ Kim Thoa đang quản lý 5 styles giày đang phát triển, theo dõi 3 đơn 
 
 ---
 
-*v1.1 | Demo 7 được thêm mới dựa trên survey feedback từ Kim Thoa (Footwear/Technical/Quality)*
+---
+
+# PHẦN 2 – Workflow-Based Demos (v1.3)
+
+> Các demo dưới đây được th

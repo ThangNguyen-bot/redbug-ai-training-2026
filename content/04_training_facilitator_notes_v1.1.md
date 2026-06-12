@@ -1,5 +1,6 @@
-# Redbug AI Training v1.2 - Facilitator Notes
+# Redbug AI Training v1.3 - Facilitator Notes
 > Ngày 16/06/2026 | VP Redbug Vietnam | 08:45 – 17:30
+> v1.3: Cập nhật lịch sang workflow-based (WF0–WF6), phân nhóm tay chân theo workflow, WF5 = spotlight demo
 
 ---
 
@@ -15,25 +16,28 @@
 
 ---
 
-## Lịch trình Ngày Training (Revised v1.2)
+## Lịch trình Ngày Training (v1.3 – Workflow-Based)
 
 | Thời gian | Nội dung | Ghi chú Facilitator |
 |---|---|---|
 | 08:45 – 09:00 | Check-in, setup thiết bị | Kiểm tra WiFi, tất cả mở sẵn ChatGPT/Claude |
-| 09:00 – 09:15 | Opening: Tại sao AI training lúc này? | Ngắn gọn, không thuyết giáo – show 1 ví dụ thực tế ngay |
-| 09:15 – 09:45 | **AI Security Q&A + Quy tắc RED/YELLOW/GREEN** | Xem phần xử lý câu hỏi bảo mật phía dưới |
-| 09:45 – 10:15 | Prompt Formula + Starter Prompt | Mọi người tự thiết lập AI theo vai trò của mình |
-| 10:15 – 10:30 | Break | |
-| 10:30 – 11:15 | **Demo 1 + Demo 2** (Facilitator làm mẫu) | Học viên làm theo trên laptop |
-| 11:15 – 12:00 | **Demo 3** + Q&A sáng | Tập trung PD + Kim Thoa |
-| 12:00 – 13:15 | Nghỉ trưa | |
-| 13:15 – 14:00 | **Demo 4 + Demo 5** – QA/QC + CSR (45 phút) | Nhóm QA/QC + CSR; Thang làm mẫu cả 2 demo liên tiếp |
-| 14:00 – 14:20 | **Demo 6** – Office Admin (20 phút, quick demo) | Facilitator làm mẫu nhanh; không cần học viên làm theo ngay |
-| 14:20 – 15:15 | **Demo 7 ⭐** – Monthly Tech/Quality/Sample Report (55 phút) | Xem hướng dẫn riêng Demo 7 phía dưới; đây là highlight của ngày |
-| 15:15 – 15:30 | Break | |
-| 15:30 – 16:30 | **Thực hành tự do theo nhóm** (60 phút) | Thang đi từng nhóm; xem phân nhóm phía dưới |
-| 16:30 – 17:00 | **Chốt Pilot** | Dùng bảng Pilot Shortlist trong file 03_2week_pilot_tracker_v1.2.md |
-| 17:00 – 17:30 | Wrap-up + Q&A cuối ngày | |
+| 09:00 – 09:15 | Opening: Tại sao AI training lúc này? | Ngắn gọn, show survey insight anonymized — đừng thuyết giáo |
+| 09:15 – 09:50 | **WF0 – AI Security + Anonymization Protocol** (35 phút) | Bao gồm Slide 5 mới: ẩn danh hóa Ctrl+F + Quiz RED/YELLOW/GREEN |
+| 09:50 – 10:20 | Prompt Formula: Role + Task + Context + Output + Constraints | Mọi người tự điền Starter Prompt — 5 phút practice ngay |
+| 10:20 – 10:30 | Break | |
+| 10:30 – 11:00 | **WF1 – Email / Manual / Tech Pack Summary** (30 phút) | Tất cả vai trò; Thang demo 10p + mọi người tự thử 15p |
+| 11:00 – 11:40 | **WF3 – Inspection Report + Defect Description** (40 phút) | Focus Lan Anh, Khánh Linh, Sandra, Xuân Trâm |
+| 11:40 – 12:00 | **WF2 – Tech Pack / DCL Comparison** (20 phút, quick) | Hải Yến, Kim Thoa, Xuân Trâm — có thể cắt bớt nếu WF3 trễ |
+| 12:00 – 13:15 | Nghỉ trưa | Dùng thời gian này chuẩn bị data WF5 vào Notepad |
+| 13:15 – 14:00 | **WF4 – CAPA / Root Cause / Factory Risk** (45 phút) | Focus Xuân Trâm + Kim Thoa; Thang demo 15p + tự thử 25p |
+| 14:00 – 14:15 | **WF6 – Training Material** (15 phút, quick) | Thiên Kim tự chạy — cắt nếu WF4 trễ quá 14:05 |
+| 14:15 – 15:15 | **WF5 ⭐ – Monthly Operations Dashboard** (60 phút) | Xem hướng dẫn riêng WF5 phía dưới; highlight của ngày |
+| 15:15 – 15:30 | Break | Không cắt break này — WF5 dài, team cần nghỉ |
+| 15:30 – 16:30 | **Thực hành tự do theo nhóm workflow** (60 phút) | Thang đi từng nhóm; xem phân nhóm phía dưới |
+| 16:30 – 17:00 | **Chốt Pilot** | Dùng Pilot Shortlist 5 pilots — file `03_2week_pilot_tracker_v1.2.md` |
+| 17:00 – 17:30 | Wrap-up + Q&A cuối ngày | Nhắc lịch check-in 20/06, 23/06, 30/06 |
+
+> **Quy tắc cắt nếu trễ giờ:** WF2 (có thể cắt xuống 10 phút) → WF6 (cắt hoàn toàn nếu cần) → Không bao giờ cắt WF0, WF5, và Break chiều.
 
 ---
 
@@ -78,9 +82,9 @@ Facilitator đọc tình huống, team trả lời: RED / YELLOW / GREEN?
 
 ---
 
-## Hướng dẫn riêng: Demo 7 – Monthly Tech/Quality/Sample Progress Report
+## Hướng dẫn riêng: WF5 ⭐ – Monthly Operations Dashboard
 
-### Tại sao Demo 7 quan trọng?
+### Tại sao WF5 quan trọng?
 
 Đây là demo trực tiếp giải quyết pain point thật của Kim Thoa (và có thể cả Xuân Trâm):
 - Làm bảng so sánh báo giá thủ công → mất nhiều thời gian
@@ -95,51 +99,55 @@ Facilitator đọc tình huống, team trả lời: RED / YELLOW / GREEN?
 3. Copy sẵn 4 bảng dữ liệu giả lập vào clipboard hoặc Notepad
 4. Nhóm nhỏ: Kim Thoa, Xuân Trâm, và 2-3 người khác có liên quan
 
-### Cách chạy Demo 7 (55 phút)
+### Cách chạy WF5 (60 phút – từ 14:15)
 
-**Bước 1–2 (15 phút):** Thang làm mẫu Prompt 1 (Priority List) và Prompt 2 (Order Summary). Học viên theo dõi màn hình chiếu.
+> **Setup trước 14:15:** Mở sẵn Notepad với 4 Data Sets của Demo WF5 (từ file `07_demo_monthly_report_assistant.md`). Mở tab ChatGPT hoặc Claude sẵn sàng.
 
-**Bước 3 (10 phút):** Kim Thoa hoặc Xuân Trâm tự chạy Prompt 3 (Defect Trend) trên laptop của họ. Thang đứng cạnh hỗ trợ nếu cần.
+**Bước 1–2 (15 phút):** Thang demo Prompt 1 (Sample Priority List) và Prompt 2 (Order Progress Summary). Học viên theo dõi màn hình chiếu. Giải thích từng phần output.
 
-**Bước 4 (10 phút):** Kim Thoa tự chạy Prompt 4 (Quotation Comparison). Đây là pain point trực tiếp – để cô ấy thao tác và tự thấy kết quả.
+**Bước 3 (10 phút):** Kim Thoa hoặc Xuân Trâm tự chạy Prompt 3 (Defect Trend + Factory Risk) trên laptop của họ. Thang đứng cạnh hỗ trợ.
 
-**Bước 5–6 (15 phút):** Thang làm mẫu Prompt 5 (Report Outline) và Prompt 6 (Email to US). **Lưu ý:** nhắc học viên phải dùng cùng session với Bước 1–4, không đóng tab.
+**Bước 4 (10 phút) ⭐ MOMENT CHÍNH:** Kim Thoa tự chạy Prompt 4 (Quotation Comparison). Đây là pain point trực tiếp — để cô ấy thao tác và tự thấy kết quả. Hỏi ngay: *"Bình thường làm bảng này mất bao lâu?"*
 
-**Bước 7 + Debrief (5 phút):** Thang chạy nhanh Prompt 7 (email nội bộ). Hỏi debrief 2–3 câu, không kéo dài.
+**Bước 5–6 (15 phút):** Thang làm mẫu Prompt 5 (Report Outline tổng hợp) và Prompt 6 (Email to GoldBug US). **⚠️ Nhắc:** phải dùng cùng session với Bước 1–4. Nếu mất session → dùng Prompt 5 Fallback (có trong file `07_demo_monthly_report_assistant.md`).
 
-### Điểm cần nhấn mạnh trong Demo 7
+**Bước 7 + Debrief (10 phút):** Thang chạy Prompt 7 (email nội bộ tiếng Việt) nếu còn thời gian. Hỏi 3 câu debrief, không kéo dài quá 5 phút.
+
+> **3 câu debrief WF5:**
+> 1. "Kim Thoa: Bạn tiết kiệm được bao nhiêu thời gian so với làm tay?"
+> 2. "Output này có dùng làm nền cho báo cáo tháng 6 thật không?"
+> 3. "Để áp dụng ngay, bạn cần chuẩn bị gì?"
+
+### Điểm cần nhấn mạnh trong WF5
 
 - "Kim Thoa, bình thường làm bảng so sánh báo giá này mất bao lâu? AI vừa làm trong 30 giây."
 - "Output cần review trước khi gửi – AI không biết context nội bộ của bạn."
-- "Đây là template – sau training Kim Thoa có thể tự làm với data thật của tháng 6."
+- "Đây là template — sau training Kim Thoa có thể tự làm với data thật của tháng 6."
+- **Kết nối workflow:** "WF1 → tóm tắt email đầu vào → WF3 → viết report → WF4 → CAPA → WF5 → tổng hợp thành dashboard tháng."
 
 ---
 
-## Hướng dẫn Thực hành Nhóm (15:30 – 16:30)
+## Hướng dẫn Thực hành Nhóm theo Workflow (15:30 – 16:30)
 
-> **Lưu ý về facilitator:** Thang là facilitator chính và duy nhất được đảm bảo có mặt. Nếu Lam hoặc Thu Anh có thể hỗ trợ ngày hôm đó, họ có thể giúp đứng cạnh 1–2 nhóm trong phần tự do này — nhưng đây là optional, không phải điều kiện bắt buộc để chạy được buổi training. Thang nên chuẩn bị kịch bản chạy một mình.
+> **Lưu ý về facilitator:** Thang là facilitator chính và duy nhất được đảm bảo có mặt. Lam / Thu Anh là optional — chuẩn bị kịch bản chạy một mình.
 
-### Phân nhóm (Thang tự điều phối)
+### Phân nhóm theo Workflow (v1.3)
 
-| Nhóm | Thành viên | Demo tập trung | Người hỗ trợ |
+| Nhóm | Thành viên | Workflow tập trung | Bài tập gợi ý |
 |---|---|---|---|
-| Nhóm Tech/QA | Kim Thoa, Xuân Trâm, Lan Anh, Yến, Linh | Tiếp tục Demo 7 với data thật của tuần này (đã ẩn) | Thang ưu tiên nhóm này |
-| Nhóm PD/Merch | Hải Yến, Trinh, Sandra | Demo 3 nâng cao + Prompt tùy chỉnh | Lam (nếu có mặt) hoặc tự thực hành |
-| Nhóm CSR/Admin | Tú Anh/Anna, Hạnh | Demo 5 + Demo 6 tự thực hành | Thu Anh (nếu có mặt) hoặc tự thực hành |
-| Nhóm Leadership | Thiên Kim | Demo 1 nâng cao + Briefing workflow | Thang (ghé qua sau nhóm Tech/QA) |
+| Nhóm 1 – QC | Lan Anh, Khánh Linh | **WF3** Inspection Report + Defect | Lấy ghi chú tay lần kiểm hàng gần nhất (ẩn tên nhà máy) → chạy WF3 |
+| Nhóm 2 – QA/DCL | Xuân Trâm | **WF4** CAPA / **WF2** DCL Comparison | Anonymize 1 CAPA thật từ nhà máy, chạy WF4; hoặc so sánh DCL tháng 5 vs tháng 6 |
+| Nhóm 3 – PD/Merch | Hải Yến, Trinh, Sandra | **WF3** Inspection / **WF1** Email Summary | Paste 1 email từ nhà máy (đã ẩn) → tóm tắt action items; hoặc thử WF3 với data mẫu |
+| Nhóm 4 – Leadership | Thiên Kim, Kim Thoa | **WF5** Dashboard / **WF6** Training Material | Tiếp tục WF5 với data thật đã ẩn, hoặc thử WF6 để tạo outline training cho nhà máy |
 
-> **Nếu chỉ có Thang:** Ưu tiên đứng với Nhóm Tech/QA trong 30 phút đầu, sau đó ghé qua các nhóm còn lại. Các nhóm PD/Merch và CSR/Admin có thể tự thực hành với Prompt Library – nội dung đủ rõ để không cần người hướng dẫn liên tục.
+> **Nếu chỉ có Thang:** Ưu tiên đứng với Nhóm 1+2 (QC/QA) trong 30 phút đầu — đây là nhóm có confidence thấp nhất. Nhóm 3+4 tự thực hành được với Prompt Library.
 
-### Gợi ý bài tập tự do cho từng nhóm
+### Hướng dẫn chung cho học viên khi thực hành tự do
 
-**Nhóm Tech/QA:**
-> "Mỗi người tự chuẩn bị 1 ví dụ thật (đã ẩn thông tin nhạy cảm) từ công việc tuần này và dùng AI xử lý. Ví dụ: Kim Thoa paste danh sách mẫu đang theo dõi, dùng prompt Priority List từ thư viện."
-
-**Nhóm PD/Merch:**
-> "Lấy 1 email hoặc comment mẫu thật (đã ẩn tên nhà máy/style) và thử dùng AI dịch + tạo action table."
-
-**Nhóm CSR/Admin:**
-> "Tú Anh thử Prompt 7.6 (giải thích ZDHC/Higg cho nhà máy). Hạnh thử Prompt 8.1 (lịch trình công tác) với dữ liệu chuyến đi tuần tới."
+1. **Chọn 1 việc thật từ tuần này** — đã ẩn thông tin nhạy cảm trước khi paste
+2. **Dùng 1 Workflow Prompt** từ Prompt Library hoặc Slide outline
+3. **Nhớ Ctrl+F Replace All** trước khi paste bất kỳ file hoặc email thật nào
+4. **Sẵn sàng chia sẻ kết quả** sau 20 phút trong phần Gallery Share
 
 ---
 
@@ -152,9 +160,9 @@ Facilitator đọc tình huống, team trả lời: RED / YELLOW / GREEN?
 3. **Không để ai về mà chưa chọn** ít nhất 1 pilot
 4. **Nhắc lịch check-in:** 20/06 (Slack poll), 23/06 (họp nhanh 15p), 30/06 (tổng kết)
 
-### Ưu tiên thuyết phục Kim Thoa chọn Pilot #7 hoặc #8
+### Ưu tiên thuyết phục Kim Thoa chọn Pilot WF5 (Monthly Dashboard)
 
-> "Kim Thoa, tháng 6 đang kết thúc. Bạn có data về mẫu đang chạy không? Nếu có, sau training về dùng quy trình Demo 7 để làm báo cáo tháng 6 thật. Tôi sẵn sàng hỗ trợ 30 phút qua Zalo nếu bị stuck."
+> "Kim Thoa, tháng 6 đang kết thúc. Bạn có data mẫu đang chạy không? Sau training về dùng quy trình WF5 để làm báo cáo tháng 6 thật. Tôi sẵn sàng hỗ trợ 30 phút qua Zalo nếu bị stuck."
 
 ---
 
@@ -180,4 +188,4 @@ Facilitator đọc tình huống, team trả lời: RED / YELLOW / GREEN?
 
 ---
 
-*v1.2 | Structural fixes: Sửa lịch chiều (Demo 6/7 tách riêng), điều chỉnh Demo 7 lên 55 phút, cập nhật phân nhóm thực hành cho 1 facilitator chính*
+*v1.3 | Workflow-based update: Lịch đổi sang WF0–WF6, phân nhóm thực hành theo workflow (không theo vai trò), WF5 mở rộng lên 60 phút, WF2 + WF6 có thể cắt nếu trễ giờ*

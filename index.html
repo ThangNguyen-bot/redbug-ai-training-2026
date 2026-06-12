@@ -3,464 +3,459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redbug AI Training v1.0</title>
+    <title>Redbug AI Training v1.0 – 16/06/2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container nav-container">
-            <img src="assets/goldbug-logo.png" alt="GoldBug Logo" class="goldbug-logo">
-            <span class="nav-title">Redbug AI Training v1.0</span>
+            <span class="nav-brand">Redbug AI Training</span>
+            <div class="nav-links">
+                <a href="#workflows">Workflows</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#security">Bảo mật</a>
+                <a href="#resources">Tài liệu</a>
+            </div>
         </div>
     </nav>
 
+    <!-- HERO -->
     <header class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="badge">Internal Training Program</span>
-                <h1>Redbug AI Training v1.0</h1>
-                <p class="subtitle">Ứng dụng AI thực tế vào công việc hằng ngày của team Redbug</p>
-                <div class="hero-meta">
-                    <div class="meta-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        <span>Thứ Ba, 16/06/2026</span>
-                    </div>
-                    <div class="meta-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        <span>VP Redbug Vietnam</span>
-                    </div>
+        <div class="container hero-content">
+            <span class="badge">Internal Training Program · Redbug Vietnam</span>
+            <h1>Redbug AI Training <span class="v-tag">v1.0</span></h1>
+            <p class="subtitle">Ứng dụng AI thực tế vào công việc hằng ngày của team Redbug</p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <span>Thứ Hai, 16/06/2026</span>
                 </div>
-                <div class="hero-actions">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScwKS3XSFyUbCYoBQ8BCA9kDLKw9p1tvMZVJFG-Hz0bCkuSqw/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Làm survey trước training</a>
-                    <a href="#agenda" class="btn btn-secondary">Xem agenda</a>
+                <div class="meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>VP Redbug Vietnam · 08:45–17:30</span>
+                </div>
+                <div class="meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <span>11 người tham gia</span>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/goldbug-hero.jpg" alt="GoldBug Family Hero">
+            <div class="hero-actions">
+                <a href="#agenda" class="btn btn-primary">Xem Agenda</a>
+                <a href="#resources" class="btn btn-outline">Tài liệu training</a>
             </div>
         </div>
     </header>
 
-    <section class="goldbug-context">
+    <!-- WHY + SURVEY STATS -->
+    <section id="why" class="section bg-alt">
         <div class="container">
-            <div class="context-grid">
-                <div class="context-item">
-                    <div class="context-icon blush-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                    </div>
-                    <p>55+ years designing for babies</p>
+            <div class="why-grid">
+                <div class="why-text">
+                    <h2>Tại sao có buổi training này?</h2>
+                    <p>Team Redbug hoạt động qua nhiều bộ phận với những quy trình khác nhau. Qua survey nội bộ (7/11 phản hồi), các pain point thực tế đã được xác định — từ inspection report đến CAPA, tech pack comparison và monthly dashboard.</p>
+                    <p><strong>AI là trợ lý công việc thực tế — không phải món đồ chơi.</strong></p>
+                    <p>Mỗi người ra về với ít nhất 1 workflow AI cá nhân hóa và 1 pilot use case để áp dụng ngay trong 2 tuần.</p>
                 </div>
-                <div class="context-item">
-                    <div class="context-icon blush-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="survey-stats">
+                    <div class="stat-item">
+                        <div class="stat-val">2.4<small>/5</small></div>
+                        <div class="stat-lbl">Confidence trung bình</div>
                     </div>
-                    <p>Mom owned, Parent approved</p>
-                </div>
-                <div class="context-item">
-                    <div class="context-icon blush-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="stat-item">
+                        <div class="stat-val">7<small>/11</small></div>
+                        <div class="stat-lbl">Survey responses</div>
                     </div>
-                    <p>The gold standard for safety</p>
-                </div>
-                <div class="context-item">
-                    <div class="context-icon blush-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <div class="stat-item stat-accent">
+                        <div class="stat-val">8</div>
+                        <div class="stat-lbl">Workflows được thiết kế</div>
                     </div>
-                    <p>Supporting family well-being</p>
-                </div>
-                <div class="context-item">
-                    <div class="context-icon blush-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+                    <div class="stat-item">
+                        <div class="stat-val">#1</div>
+                        <div class="stat-lbl">Pain point: Inspection Report</div>
                     </div>
-                    <p>On-the-go gear for baby’s everyday adventures</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="product-strip">
-        <img src="assets/goldbug-product-01.jpg" alt="GoldBug Product 1">
-        <img src="assets/goldbug-product-02.jpg" alt="GoldBug Product 2">
-        <img src="assets/goldbug-product-03.jpg" alt="GoldBug Product 3">
-        <img src="assets/goldbug-product-04.jpg" alt="GoldBug Product 4">
+    <!-- WORKFLOWS WF0–WF7 -->
+    <section id="workflows" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>8 Core Workflows</h2>
+                <p>Training theo quy trình thực tế — mỗi workflow phục vụ nhiều vai trò cùng lúc</p>
+            </div>
+            <div class="wf-grid">
+
+                <div class="wf-card">
+                    <div class="wf-header">
+                        <span class="wf-num">WF0</span>
+                        <span class="wf-tag">Tất cả · Bắt buộc đầu tiên</span>
+                    </div>
+                    <h3>AI Security + Anonymization</h3>
+                    <ul>
+                        <li>Quy tắc RED / YELLOW / GREEN</li>
+                        <li>Ẩn danh hóa tài liệu trước khi dùng AI (Ctrl+F → Replace All)</li>
+                        <li>AI không chia sẻ dữ liệu của bạn với ai khác</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card">
+                    <div class="wf-header">
+                        <span class="wf-num">WF1</span>
+                        <span class="wf-tag">Tất cả vai trò</span>
+                    </div>
+                    <h3>Email / Manual / Tech Pack Summary</h3>
+                    <ul>
+                        <li>Tóm tắt email dài, extract action items</li>
+                        <li>Đọc nhanh manual và spec tiếng Anh</li>
+                        <li>Chuyển nội dung phức tạp → checklist ngắn gọn</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card wf-priority">
+                    <div class="wf-header">
+                        <span class="wf-num">WF2</span>
+                        <span class="wf-tag">PD · Footwear · QA/QC</span>
+                    </div>
+                    <h3>Tech Pack / Data Pack / DCL Comparison</h3>
+                    <ul>
+                        <li>Đối chiếu Tech Pack cũ vs mới — phát hiện thay đổi</li>
+                        <li>So sánh DCL / Data Pack giữa các phiên bản</li>
+                        <li>Highlight điểm khác biệt cần confirm với US</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card wf-priority">
+                    <div class="wf-header">
+                        <span class="wf-num">WF3</span>
+                        <span class="wf-tag">QC Inspector · QA/QC Manager</span>
+                    </div>
+                    <h3>Inspection Report + Defect Description</h3>
+                    <ul>
+                        <li>Ghi chú tay → báo cáo kiểm hàng hoàn chỉnh</li>
+                        <li>Mô tả lỗi (defect) bằng tiếng Anh chuyên nghiệp</li>
+                        <li>Phân loại Critical / Major / Minor tự động</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card wf-priority">
+                    <div class="wf-header">
+                        <span class="wf-num">WF4</span>
+                        <span class="wf-tag">QA/QC Manager · Footwear Quality</span>
+                    </div>
+                    <h3>CAPA / Root Cause / Factory Risk</h3>
+                    <ul>
+                        <li>Phân tích nguyên nhân gốc rễ (5 Whys / Fishbone)</li>
+                        <li>Soạn CAPA plan hoàn chỉnh gửi nhà máy</li>
+                        <li>Đánh giá mức độ rủi ro nhà máy</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card wf-star">
+                    <div class="wf-header">
+                        <span class="wf-num">WF5 ⭐</span>
+                        <span class="wf-tag">Country Manager · QA/QC · Footwear</span>
+                    </div>
+                    <h3>Monthly Operations Dashboard</h3>
+                    <ul>
+                        <li>Tổng hợp tiến độ mẫu, đơn hàng và defect trend tháng</li>
+                        <li>Dashboard chất lượng + bảng so sánh báo giá vendor</li>
+                        <li>Email báo cáo tháng gửi GoldBug US (Anh / Việt)</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card">
+                    <div class="wf-header">
+                        <span class="wf-num">WF6</span>
+                        <span class="wf-tag">Country Manager · PD</span>
+                    </div>
+                    <h3>Training Material Presentation</h3>
+                    <ul>
+                        <li>Soạn tài liệu training cho nhà máy</li>
+                        <li>Tạo presentation / briefing nhanh</li>
+                        <li>Viết SOP ngắn bằng tiếng Anh</li>
+                    </ul>
+                </div>
+
+                <div class="wf-card wf-pending">
+                    <div class="wf-header">
+                        <span class="wf-num">WF7</span>
+                        <span class="wf-tag wf-tag-pending">Pending · Office Admin</span>
+                    </div>
+                    <h3>Office Admin Assistant</h3>
+                    <ul>
+                        <li>Lịch trình công tác 2 phiên bản (Anh / Việt)</li>
+                        <li>Tổng hợp chi phí và expense report</li>
+                        <li>Office operations checklist</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <main>
-        <section id="why" class="section bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Tại sao có buổi training này?</h2>
-                </div>
-                <div class="card content-card">
-                    <p>Team Redbug hoạt động xuyên suốt qua nhiều bộ phận: merchandising, product development, QA/QC, CSR/audit, office operations và country management. Mỗi bộ phận có những đặc thù riêng.</p>
-                    <p><strong>AI nên được sử dụng như một trợ lý công việc thực tế, không phải là một món đồ chơi.</strong></p>
-                    <p>Mục tiêu lớn nhất: Sau buổi training, mỗi người tham gia sẽ được trang bị một trợ lý AI cá nhân hóa, các bộ prompt theo từng vai trò, và ít nhất một pilot use case để áp dụng ngay vào công việc.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="objectives" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Mục tiêu đào tạo</h2>
-                </div>
-                <div class="grid objectives-grid">
-                    <div class="objective-card">
-                        <div class="icon-wrapper blush-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        </div>
-                        <h3>Bảo mật</h3>
-                        <p>Hiểu cách dùng AI an toàn trong công việc tại Redbug.</p>
-                    </div>
-                    <div class="objective-card">
-                        <div class="icon-wrapper blush-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        </div>
-                        <h3>Cá nhân hóa</h3>
-                        <p>Biết tạo AI assistant cá nhân theo từng vai trò cụ thể.</p>
-                    </div>
-                    <div class="objective-card">
-                        <div class="icon-wrapper blush-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                        </div>
-                        <h3>Xử lý công việc</h3>
-                        <p>Dùng AI để xử lý email, tài liệu, report, checklist, meeting notes, inspection notes.</p>
-                    </div>
-                    <div class="objective-card">
-                        <div class="icon-wrapper blush-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                        </div>
-                        <h3>Thực thi</h3>
-                        <p>Tạo được prompt/workflow cho công việc thật và chốt pilot 2 tuần sau training.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="agenda" class="section bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Agenda Đào Tạo</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="time">08:45–09:00</div>
-                        <div class="event">Check-in & setup</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">09:00–09:30</div>
-                        <div class="event">AI mindset for Redbug</div>
-                    </div>
-                    <div class="timeline-item highlight">
-                        <div class="time">09:30–10:15</div>
-                        <div class="event">Demo 1: GoldBug Brand & Product Assistant</div>
-                    </div>
-                    <div class="timeline-item break">
-                        <div class="time">10:15–10:30</div>
-                        <div class="event">Break</div>
-                    </div>
-                    <div class="timeline-item highlight">
-                        <div class="time">10:30–11:30</div>
-                        <div class="event">Demo 2: Merchandising + PD Assistant</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">11:30–12:00</div>
-                        <div class="event">Personal AI Assistant setup</div>
-                    </div>
-                    <div class="timeline-item break">
-                        <div class="time">12:00–13:15</div>
-                        <div class="event">Lunch</div>
-                    </div>
-                    <div class="timeline-item highlight">
-                        <div class="time">13:15–14:15</div>
-                        <div class="event">Demo 3: QA/QC Inspection + CAPA Assistant</div>
-                    </div>
-                    <div class="timeline-item highlight">
-                        <div class="time">14:15–15:00</div>
-                        <div class="event">Demo 4: CSR / Audit / Chemical Compliance Assistant</div>
-                    </div>
-                    <div class="timeline-item break">
-                        <div class="time">15:00–15:15</div>
-                        <div class="event">Break</div>
-                    </div>
-                    <div class="timeline-item highlight">
-                        <div class="time">15:15–16:00</div>
-                        <div class="event">Demo 5: Office Admin / Travel / Expense Assistant</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">16:00–16:45</div>
-                        <div class="event">Group workshop by role</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">16:45–17:15</div>
-                        <div class="event">Pilot planning</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">17:15–17:30</div>
-                        <div class="event">Closing & next steps</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="roles" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Role-based AI Use Cases</h2>
-                </div>
-                <div class="grid role-grid">
-                    <!-- Role Card 1 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>Country Manager</h3>
-                            <span class="name">Thiên Kim</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Weekly Redbug AI Briefing</li>
-                            <li>Risk/action dashboard</li>
-                            <li>GoldBug US communication</li>
-                            <li>Factory/customer escalation summary</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Role Card 2 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>Merchandiser</h3>
-                            <span class="name">Sandra</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Seasonal calendar follow-up</li>
-                            <li>Sample status tracking</li>
-                            <li>Data pack clarification</li>
-                            <li>Factory and US email drafting</li>
-                        </ul>
-                    </div>
-
-                    <!-- Role Card 3 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>Product Developer</h3>
-                            <span class="name">Hải Yến, Trinh</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Sample development tracker</li>
-                            <li>Buyer comment summary</li>
-                            <li>Tech pack/spec review</li>
-                            <li>Factory follow-up checklist</li>
-                        </ul>
-                    </div>
-
-                    <!-- Role Card 4 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>Footwear Technologist / Quality Technician</h3>
-                            <span class="name">Kim Thoa</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Footwear technical review</li>
-                            <li>Defect and fitting analysis</li>
-                            <li>Sample quality checklist</li>
-                            <li>Technical comments in English</li>
-                        </ul>
-                    </div>
-
-                    <!-- Role Card 5 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>QA/QC Manager</h3>
-                            <span class="name">Xuân Trâm</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Inspection schedule planning</li>
-                            <li>Inline/FRI report review</li>
-                            <li>Defect trend analysis</li>
-                            <li>CAPA follow-up</li>
-                        </ul>
-                    </div>
-
-                    <!-- Role Card 6 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>QC Inspectors</h3>
-                            <span class="name">Lan Anh, Nguyễn Thị Yến, Khánh Linh</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Convert inspection notes to report</li>
-                            <li>Defect description in English</li>
-                            <li>Photo-to-report workflow</li>
-                            <li>Factory CAPA email</li>
-                        </ul>
-                    </div>
-
-                    <!-- Role Card 7 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>Senior CSR / Factory Audit</h3>
-                            <span class="name">Tú Anh / Anna</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>CSR and factory audit checklist</li>
-                            <li>Chemical/RSL compliance summary</li>
-                            <li>Critical/Major/Minor finding classification</li>
-                            <li>CAPA plan and factory training checklist</li>
-                        </ul>
-                    </div>
-
-                    <!-- Role Card 8 -->
-                    <div class="role-card">
-                        <div class="role-header">
-                            <h3>Office Admin / Office Manager</h3>
-                            <span class="name">Hạnh</span>
-                        </div>
-                        <ul class="use-case-list">
-                            <li>Travel plan for factory visits</li>
-                            <li>Hotel/car/flight booking checklist</li>
-                            <li>Expense recording & monthly summary</li>
-                            <li>Office operations checklist</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="demos" class="section bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Demo Library</h2>
-                </div>
-                <div class="grid demo-grid">
-                    <div class="demo-card">
-                        <span class="demo-number">01</span>
-                        <h3>GoldBug Brand & Product Brief</h3>
-                    </div>
-                    <div class="demo-card">
-                        <span class="demo-number">02</span>
-                        <h3>Sample Comment Email Thread</h3>
-                    </div>
-                    <div class="demo-card">
-                        <span class="demo-number">03</span>
-                        <h3>Inspection Notes and Defect Report</h3>
-                    </div>
-                    <div class="demo-card">
-                        <span class="demo-number">04</span>
-                        <h3>CSR Audit Findings and CAPA</h3>
-                    </div>
-                    <div class="demo-card">
-                        <span class="demo-number">05</span>
-                        <h3>Redbug Travel Plan and Expense Summary</h3>
-                    </div>
-                    <div class="demo-card">
-                        <span class="demo-number">06</span>
-                        <h3>Weekly Meeting Transcript to Action Tracker</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="security" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>AI Security Rules</h2>
-                    <p>Phân loại dữ liệu khi làm việc với AI tại Redbug</p>
-                </div>
-                <div class="grid security-grid">
-                    <div class="security-card red">
-                        <div class="sec-header">
-                            <div class="indicator"></div>
-                            <h3>RED</h3>
-                        </div>
-                        <p class="sec-subtitle">Không đưa vào AI public</p>
-                        <ul>
-                            <li>PO thật</li>
-                            <li>Giá, hợp đồng, margin</li>
-                            <li>Thông tin khách hàng hoặc retailer chưa được phép chia sẻ</li>
-                            <li>Thông tin cá nhân nhân viên</li>
-                            <li>Audit finding nhạy cảm</li>
-                            <li>Dữ liệu sản phẩm chưa phát hành</li>
-                            <li>File hoặc hình ảnh chưa được phép chia sẻ</li>
-                        </ul>
-                    </div>
-
-                    <div class="security-card yellow">
-                        <div class="sec-header">
-                            <div class="indicator"></div>
-                            <h3>YELLOW</h3>
-                        </div>
-                        <p class="sec-subtitle">Cần che/xóa trước khi dùng AI</p>
-                        <ul>
-                            <li>Tên nhà máy</li>
-                            <li>Mã hàng</li>
-                            <li>Mã PO</li>
-                            <li>Tên khách hàng</li>
-                            <li>Giá</li>
-                            <li>Ngày giao hàng cụ thể</li>
-                            <li>Tên người liên quan</li>
-                        </ul>
-                    </div>
-
-                    <div class="security-card green">
-                        <div class="sec-header">
-                            <div class="indicator"></div>
-                            <h3>GREEN</h3>
-                        </div>
-                        <p class="sec-subtitle">Có thể dùng thoải mái</p>
-                        <ul>
-                            <li>Nội dung website public</li>
-                            <li>File demo giả định</li>
-                            <li>Template đã anonymized</li>
-                            <li>Quy trình nội bộ không nhạy cảm</li>
-                            <li>Prompt mẫu</li>
-                            <li>Checklist chung</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pilots" class="section bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Pilots After Training</h2>
-                    <p>Các ứng dụng thực tế sẽ được triển khai ngay sau buổi học</p>
-                </div>
-                <div class="pilot-list">
-                    <div class="pilot-item">
-                        <div class="check-icon">✓</div>
-                        <span>Weekly Redbug AI Briefing</span>
-                    </div>
-                    <div class="pilot-item">
-                        <div class="check-icon">✓</div>
-                        <span>Sample / PD Follow-up Assistant</span>
-                    </div>
-                    <div class="pilot-item">
-                        <div class="check-icon">✓</div>
-                        <span>Inspection Report & CAPA Assistant</span>
-                    </div>
-                    <div class="pilot-item">
-                        <div class="check-icon">✓</div>
-                        <span>Factory CSR / Audit / Chemical Compliance Assistant</span>
-                    </div>
-                    <div class="pilot-item">
-                        <div class="check-icon">✓</div>
-                        <span>Factory Risk Tracker</span>
-                    </div>
-                    <div class="pilot-item">
-                        <div class="check-icon">✓</div>
-                        <span>Office Admin & Travel Expense Assistant</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- AGENDA -->
+    <section id="agenda" class="section bg-alt">
         <div class="container">
-            <p>Internal training material – Redbug AI Training v1.0 – 16/06/2026</p>
+            <div class="section-header">
+                <h2>Agenda Đào Tạo</h2>
+                <p>Thứ Hai 16/06/2026 · 08:45–17:30 · 70% hands-on / 30% concept</p>
+            </div>
+            <div class="agenda-columns">
+
+                <div class="agenda-col">
+                    <div class="agenda-col-label">Buổi Sáng</div>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="tl-time">08:45–09:00</div>
+                            <div class="tl-event">Check-in &amp; setup thiết bị</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-time">09:00–09:15</div>
+                            <div class="tl-event">Khai mạc — AI mindset for Redbug</div>
+                        </div>
+                        <div class="tl-item tl-highlight">
+                            <div class="tl-time">09:15–09:45</div>
+                            <div class="tl-event"><strong>WF0</strong> – AI Security + Anonymization Protocol</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-time">09:45–10:15</div>
+                            <div class="tl-event">Prompt Formula: Role + Task + Context + Output</div>
+                        </div>
+                        <div class="tl-item tl-break">
+                            <div class="tl-time">10:15–10:30</div>
+                            <div class="tl-event">Break</div>
+                        </div>
+                        <div class="tl-item tl-highlight">
+                            <div class="tl-time">10:30–11:00</div>
+                            <div class="tl-event"><strong>WF1</strong> – Email / Manual Summary</div>
+                        </div>
+                        <div class="tl-item tl-highlight">
+                            <div class="tl-time">11:00–11:40</div>
+                            <div class="tl-event"><strong>WF3</strong> – Inspection Report + Defect Description</div>
+                        </div>
+                        <div class="tl-item tl-highlight">
+                            <div class="tl-time">11:40–12:00</div>
+                            <div class="tl-event"><strong>WF2</strong> – Tech Pack / DCL Comparison (quick)</div>
+                        </div>
+                        <div class="tl-item tl-break">
+                            <div class="tl-time">12:00–13:15</div>
+                            <div class="tl-event">Nghỉ trưa</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-col">
+                    <div class="agenda-col-label">Buổi Chiều</div>
+                    <div class="timeline">
+                        <div class="tl-item tl-highlight">
+                            <div class="tl-time">13:15–14:00</div>
+                            <div class="tl-event"><strong>WF4</strong> – CAPA / Root Cause / Factory Risk</div>
+                        </div>
+                        <div class="tl-item tl-highlight">
+                            <div class="tl-time">14:00–14:15</div>
+                            <div class="tl-event"><strong>WF6</strong> – Training Material (quick demo)</div>
+                        </div>
+                        <div class="tl-item tl-star">
+                            <div class="tl-time">14:15–15:15</div>
+                            <div class="tl-event"><strong>WF5 ⭐</strong> – Monthly Operations Dashboard</div>
+                        </div>
+                        <div class="tl-item tl-break">
+                            <div class="tl-time">15:15–15:30</div>
+                            <div class="tl-event">Break</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-time">15:30–16:30</div>
+                            <div class="tl-event">Thực hành tự do theo nhóm workflow</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-time">16:30–17:00</div>
+                            <div class="tl-event">Chốt Pilot — mỗi người chọn 1 pilot 2 tuần</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-time">17:00–17:30</div>
+                            <div class="tl-event">Tổng kết + Q&amp;A + Next steps</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECURITY -->
+    <section id="security" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quy tắc Bảo mật AI</h2>
+                <p>Phân loại dữ liệu khi làm việc với AI tại Redbug — áp dụng trước mọi demo</p>
+            </div>
+            <div class="security-grid">
+
+                <div class="security-card sec-red">
+                    <div class="sec-header">
+                        <div class="sec-dot"></div>
+                        <h3>RED</h3>
+                    </div>
+                    <p class="sec-sub">Không bao giờ đưa vào AI public</p>
+                    <ul>
+                        <li>PO thật, giá, hợp đồng, margin</li>
+                        <li>Thông tin khách hàng / retailer</li>
+                        <li>Thông tin cá nhân nhân viên</li>
+                        <li>Audit finding nhạy cảm</li>
+                        <li>Dữ liệu sản phẩm chưa phát hành</li>
+                        <li>File / hình ảnh chưa được phép chia sẻ</li>
+                    </ul>
+                </div>
+
+                <div class="security-card sec-yellow">
+                    <div class="sec-header">
+                        <div class="sec-dot"></div>
+                        <h3>YELLOW</h3>
+                    </div>
+                    <p class="sec-sub">Cần ẩn danh hóa trước khi dùng AI</p>
+                    <ul>
+                        <li>Tên nhà máy → "Factory A / B / C"</li>
+                        <li>Mã hàng → "Item 001 / 002"</li>
+                        <li>Mã PO → "PO-XXXX"</li>
+                        <li>Tên khách hàng → "Client X"</li>
+                        <li>Giá → xóa hoặc dùng giá giả</li>
+                        <li>Ngày giao hàng cụ thể → "W/H tháng 6"</li>
+                    </ul>
+                </div>
+
+                <div class="security-card sec-green">
+                    <div class="sec-header">
+                        <div class="sec-dot"></div>
+                        <h3>GREEN</h3>
+                    </div>
+                    <p class="sec-sub">Có thể dùng thoải mái</p>
+                    <ul>
+                        <li>Nội dung website public (GoldBug.com)</li>
+                        <li>File demo giả lập đã anonymized</li>
+                        <li>Template nội bộ không nhạy cảm</li>
+                        <li>Quy trình chung (inspection steps, CAPA format)</li>
+                        <li>Prompt mẫu và checklist chung</li>
+                        <li>Tiêu chuẩn kỹ thuật public (ASTM, CPSC)</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sec-note">
+                <strong>3 điều cần nhớ:</strong>
+                AI không biết bạn là ai — trừ khi bạn tự nói ra. &nbsp;·&nbsp;
+                AI không chia sẻ conversation của bạn với GoldBug US, nhà máy, hay người dùng khác. &nbsp;·&nbsp;
+                Mỗi cuộc trò chuyện mới là tờ giấy trắng — AI không tự nhớ session trước.
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tài liệu Training</h2>
+                <p>8 tài liệu · Cập nhật liên tục đến 16/06/2026</p>
+            </div>
+            <div class="resource-grid">
+
+                <a href="content/01_prompt_library_by_role_v1.1.md" target="_blank" class="resource-card">
+                    <div class="res-icon">📋</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.3</div>
+                        <h4>Prompt Library theo Workflow</h4>
+                        <p>Bộ prompt theo từng workflow WF0–WF7, cập nhật theo survey insights</p>
+                    </div>
+                </a>
+
+                <a href="content/02_demo_exercise_pack_v1.1.md" target="_blank" class="resource-card">
+                    <div class="res-icon">🎯</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.3</div>
+                        <h4>Demo &amp; Exercise Pack</h4>
+                        <p>7 demo với fictional data sets — WF1 đến WF5, thực hành trực tiếp</p>
+                    </div>
+                </a>
+
+                <a href="content/07_demo_monthly_report_assistant.md" target="_blank" class="resource-card res-star">
+                    <div class="res-icon">⭐</div>
+                    <div class="res-body">
+                        <div class="res-badge res-badge-gold">WF5</div>
+                        <h4>Demo WF5: Monthly Dashboard</h4>
+                        <p>4 data sets + 7 prompts + 7 outputs — demo ấn tượng nhất trong ngày</p>
+                    </div>
+                </a>
+
+                <a href="content/03_2week_pilot_tracker_v1.1.md" target="_blank" class="resource-card">
+                    <div class="res-icon">📊</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.2</div>
+                        <h4>2-Week Pilot Tracker</h4>
+                        <p>Danh sách 5 pilot ưu tiên + 19 pilots chi tiết + lịch check-in 20, 23, 30/06</p>
+                    </div>
+                </a>
+
+                <a href="content/04_training_facilitator_notes_v1.1.md" target="_blank" class="resource-card">
+                    <div class="res-icon">🗒️</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.3</div>
+                        <h4>Facilitator Notes</h4>
+                        <p>Script chi tiết cho Thang — timing, debrief questions, tips khi demo</p>
+                    </div>
+                </a>
+
+                <a href="content/05_slide_outline_v1.1.md" target="_blank" class="resource-card">
+                    <div class="res-icon">🖥️</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.3</div>
+                        <h4>Slide Outline (29 slides)</h4>
+                        <p>29 slide chính + 5 Appendix — workflow-based, đã giảm từ 42 slides</p>
+                    </div>
+                </a>
+
+                <a href="content/06_survey_insight_summary.md" target="_blank" class="resource-card">
+                    <div class="res-icon">📈</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.3</div>
+                        <h4>Survey Insight Summary</h4>
+                        <p>7/11 phản hồi · Confidence 2.4/5 · Top pain points · WF0–WF7 framework</p>
+                    </div>
+                </a>
+
+                <a href="content/08_training_day_checklist.md" target="_blank" class="resource-card">
+                    <div class="res-icon">✅</div>
+                    <div class="res-body">
+                        <div class="res-badge">v1.2</div>
+                        <h4>Training Day Checklist</h4>
+                        <p>Checklist cho Thang: 2 ngày trước → ngày training → sau training</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/goldbug-logo.png" alt="GoldBug" class="footer-logo">
+                <p class="footer-tagline">The gold standard for safety</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-info">
+                <p class="footer-title">Redbug AI Training v1.0</p>
+                <p>Thứ Hai, 16/06/2026 · VP Redbug Vietnam</p>
+                <p>Internal training material · Facilitator: Thang Nguyen</p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
