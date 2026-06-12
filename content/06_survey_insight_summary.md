@@ -1,6 +1,6 @@
-# Redbug AI Training v1.2 – Survey Insight Summary
-> Điền sau khi đóng survey | Dùng để điều chỉnh nội dung training trước ngày 16/06/2026
-> Template này được điền thủ công từ kết quả Google Form
+# Redbug AI Training v1.3 – Survey Insight Summary
+> Cập nhật: 12/06/2026 | **7 / 11 phản hồi** | Hạnh / Office Admin — chưa phản hồi
+> Đủ dữ liệu để cập nhật v1.3 — **không chờ Hạnh cho nội dung chính**
 
 ---
 
@@ -8,10 +8,11 @@
 
 | Chỉ số | Giá trị |
 |---|---|
-| Tổng số phản hồi nhận được | __ / 11 người |
-| Ngày đóng survey | __ /06/2026 |
-| Số người chưa phản hồi | __ người |
-| Người chưa phản hồi (ghi tên để follow up) | |
+| Tổng số phản hồi nhận được | **7 / 11 người** |
+| Ngày cập nhật tài liệu | 12/06/2026 |
+| Số người chưa phản hồi | 4 người |
+| Người cần follow up chính | **Hạnh (Office Admin)** + 3 người khác |
+| Trạng thái | ✅ Đủ để cập nhật v1.3 — Hạnh giữ như appendix/pending |
 
 ---
 
@@ -19,268 +20,231 @@
 
 | Vai trò | Số người | Tên |
 |---|---|---|
-| Country Manager | | |
-| Merchandiser | | |
-| Product Developer | | |
-| Footwear Technical / Quality | | |
-| QA/QC Manager | | |
-| QC Inspector | | |
-| Senior CSR / Audit / Chemical Compliance | | |
-| Office Admin | | |
+| Country Manager / Leadership | 1 | Thiên Kim |
+| Product Developer | 2 | Hải Yến, Sandra |
+| Footwear Technical / Quality | 1 | Kim Thoa |
+| QA/QC Manager | 1 | Xuân Trâm |
+| QC Inspector | 2 | Lan Anh, Khánh Linh |
+| **Office Admin** | **0** | **Hạnh — chưa phản hồi** |
+
+**Ghi chú:** Office Admin (Hạnh) là gap duy nhất trong shortlist pilot. Nội dung Office Admin được giữ như appendix / mini-demo ngắn.
 
 ---
 
 ## 3. AI Tools hiện đang dùng
 
-| Tool | Số người dùng | Ghi chú |
-|---|---|---|
-| ChatGPT (Free) | | |
-| ChatGPT Plus / Team | | |
-| Gemini | | |
-| Claude | | |
-| Canva AI | | |
-| Copilot / Microsoft AI | | |
-| Chưa dùng tool nào | | |
-| Khác | | |
+> Dữ liệu chi tiết tool chưa thu thập qua survey này — sẽ confirm bằng show-of-hands đầu buổi training.
 
-**Nhận xét nhanh:**
-> *(Điền sau: VD: "80% đang dùng ChatGPT Free → cần lưu ý tắt training data trong Settings")*
+**Câu hỏi show-of-hands đầu buổi:**
+- "Ai đang dùng ChatGPT Free?" → Giơ tay
+- "Ai đang dùng ChatGPT Plus hoặc Team?" → Giơ tay
+- "Ai chưa dùng AI tool nào?" → Giơ tay
+
+**Action item:** Xác nhận với Thiên Kim team đang có account gì để điều chỉnh Appendix A3 (tool comparison).
 
 ---
 
 ## 4. Mức độ tự tin trung bình (Confidence Level)
 
-| Điểm | Số người | % |
-|---|---|---|
-| 1 / 5 – Chưa biết gì | | |
-| 2 / 5 – Đã thử vài lần | | |
-| 3 / 5 – Dùng được cơ bản | | |
-| 4 / 5 – Dùng thành thạo | | |
-| 5 / 5 – Rất tự tin | | |
-| **Trung bình** | **__ / 5** | |
-
-**Gợi ý điều chỉnh training dựa trên confidence trung bình:**
-- Nếu ≤ 2.5 → Dành thêm 10 phút cho Starter Prompt, bỏ bớt demo phụ
-- Nếu 2.5 – 3.5 → Giữ nguyên kế hoạch v1.2
-- Nếu ≥ 3.5 → Có thể rút ngắn Module 2 (Prompt Basics), thêm thời gian cho Demo 7
-
----
-
-## 5. Top 5 Pain Points (Vấn đề muốn giải quyết bằng AI)
-
-> Ghi lại theo tần suất đề cập — pain point nào nhiều người nhắc nhất xếp trên
-
-| # | Pain Point | Số người đề cập | Vai trò chính |
+| Điểm | Số người | % | Tên |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 / 5 – Chưa biết gì | 0 | 0% | |
+| 2 / 5 – Đã thử vài lần | 4 | 57% | Kim Thoa, Lan Anh, Khánh Linh, Sandra |
+| 3 / 5 – Dùng được cơ bản | 3 | 43% | Hải Yến, Thiên Kim, Xuân Trâm |
+| 4 / 5 – Dùng thành thạo | 0 | 0% | |
+| 5 / 5 – Rất tự tin | 0 | 0% | |
+| **Trung bình** | **2.4 / 5** | | |
 
-**So sánh với survey Kim Thoa (đã có):**
-- Bảng so sánh báo giá thủ công ✓
-- Nhắc việc ưu tiên theo ngày/tuần ✓
-- Báo cáo trực quan hàng tháng ✓
-- Theo dõi tiến độ mẫu/đơn hàng ✓
-- Tự động hóa dữ liệu ✓
-
-**Pain points mới xuất hiện chưa cover trong v1.2:**
-> *(Điền sau)*
+**→ Điều chỉnh training (Confidence ≤ 2.5):**
+- Dành thêm 10 phút cho Starter Prompt practice
+- Ưu tiên 3 workflow demos cốt lõi: Long Email Summary (WF1), Inspection Report (WF3), CAPA (WF4)
+- Demo WF6 (Training Material) rút ngắn thành 10 phút nếu trễ giờ
+- Không cắt Module Security — lo ngại bảo mật xuất hiện nhiều trong survey
 
 ---
 
-## 6. Top Use Cases được yêu cầu
+## 5. Top 10 Nhu cầu / Pain Points
 
-| Use Case | Số người đề cập | Đã có trong v1.2? |
+| # | Nhu cầu / Pain Point | Vai trò chính |
 |---|---|---|
-| Viết/dịch email | | ✅ |
-| Tổng hợp báo cáo tháng | | ✅ Demo 7 |
-| Bảng so sánh báo giá | | ✅ Demo 7 Bước 4 |
-| Priority list / nhắc việc | | ✅ Demo 7 Bước 1 |
-| Theo dõi tiến độ mẫu | | ✅ Demo 7 Bước 2 |
-| Phân tích defect trend | | ✅ Demo 7 Bước 3 |
-| Dịch tech pack / comment | | ✅ Demo 3 |
-| CAPA plan | | ✅ Demo 4+5 |
-| Lịch trình công tác | | ✅ Demo 6 |
-| Chemical/RSL/Higg/ZDHC | | ✅ Prompt 7.6–7.7 |
-| Upload ảnh defect → mô tả | | ⚠️ Appendix A3 |
-| Đọc/phân tích file PDF | | ⚠️ Appendix A2 |
-| Use case mới #1 | | ❓ |
-| Use case mới #2 | | ❓ |
+| 1 | Báo cáo kiểm hàng (Inspection Report / FRI) tự động hóa | QC Inspector, QA/QC Manager |
+| 2 | Mô tả lỗi (Defect Description) bằng tiếng Anh chuyên nghiệp | QC Inspector, Footwear Quality |
+| 3 | Phân tích nguyên nhân gốc rễ (Root Cause) và theo dõi CAPA | QA/QC Manager, QC Inspector |
+| 4 | Đọc / đối chiếu Tech Pack, Data Pack, Manual, DCL | PD, Footwear Tech, QA/QC |
+| 5 | Tóm tắt email dài và trích xuất action items | Tất cả vai trò |
+| 6 | Theo dõi mẫu / đơn hàng, seasonal calendar, QC weekly log | Merchandiser, PD, QA/QC |
+| 7 | Báo cáo tháng / dashboard / hiệu suất nhà máy | Country Manager, QA/QC Manager, Footwear Quality |
+| 8 | Bảng so sánh báo giá / chi phí | Footwear Quality, Leadership |
+| 9 | Tài liệu training / presentation | Country Manager, PD |
+| 10 | **Lo ngại bảo mật: tech pack, giá, dữ liệu khách hàng / nhà máy** | Tất cả vai trò |
+
+**→ Nhận xét quan trọng:**
+- Top 4 pain points (báo cáo, defect description, CAPA, tech pack) tập trung vào QC/QA/PD workflow → xác nhận hướng **workflow-based** thay vì role-based.
+- Lo ngại bảo mật (mục #10) cần giải quyết **trước khi vào bất kỳ demo nào** → tăng thời lượng Module Security + thêm slide Anonymization Protocol.
 
 ---
 
-## 7. Loại tài liệu thường xử lý
+## 6. Hướng thay đổi Training: Role-based → Workflow-based
 
-| Loại tài liệu | Số người đề cập |
+> **Insight quan trọng nhất từ survey này:**
+> Nhiều thành viên team đảm nhận vai trò chồng chéo (VD: Kim Thoa vừa là Footwear Quality, vừa làm inspection report, vừa làm monthly report). Sandra và Hải Yến đều là PD nhưng workflow khác nhau.
+>
+> **→ Quyết định v1.3:** Chuyển từ framing theo vai trò (role-based) sang framing theo quy trình công việc (workflow-based). Mỗi Workflow Demo phục vụ nhiều vai trò cùng lúc.
+
+**8 Core Workflows cho training:**
+
+| # | Workflow | Vai trò chính |
+|---|---|---|
+| WF0 | AI Security + Anonymization (trước mọi thứ) | Tất cả |
+| WF1 | Long Email / Manual / Tech Pack Summary Assistant | Tất cả |
+| WF2 | Tech Pack / Data Pack / DCL Comparison Assistant | PD, Footwear Quality, QA/QC |
+| WF3 | Inspection Report + Defect Description Assistant | QC Inspector, QA/QC Manager |
+| WF4 | CAPA / Root Cause / Factory Risk Assistant | QA/QC Manager, Footwear Quality |
+| WF5 ⭐ | Monthly Operations / Quality / Sample Progress Dashboard | Country Manager, QA/QC, Footwear Quality |
+| WF6 | Training Material Presentation Assistant | Country Manager, PD |
+| WF7 | Office Admin Assistant — **pending Hạnh response** | Office Admin |
+
+---
+
+## 7. Lo ngại Bảo mật (Security Concerns)
+
+| Lo ngại / Câu hỏi | Đã giải quyết trong v1.3? |
 |---|---|
-| Email | |
-| Excel / Google Sheet | |
-| PDF | |
-| Tech Pack / Data Pack | |
-| Inspection Report | |
-| Sample Comments | |
-| Meeting Notes | |
-| Hình ảnh sản phẩm / defect | |
-| SDS / Lab Report | |
-| Audit Report | |
-| Khác | |
+| "AI có bảo mật thông tin tôi chia sẻ không?" | ✅ Slide 3 Security Module — 3 điều cần biết |
+| Lo ngại về tech pack, cost, customer/factory data | ✅ Slide 5 mới: Anonymization Protocol (Ctrl+F / Replace All) |
+| "AI có lưu dữ liệu công ty không?" | ✅ Slide 3 |
+| "Dùng AI có vi phạm hợp đồng với GoldBug US không?" | ❓ Cần confirm với Thiên Kim trước 16/06 |
+| Lo ngại chia sẻ giá / cost / margin | ✅ RED rule — không bao giờ paste giá thật |
+| Lo ngại tên nhà máy / vendor bị lộ | ✅ Anonymization Protocol — Ctrl+F Replace All trước khi paste |
 
-**Ghi chú cho training:**
-> *(Điền sau: VD: "5/11 người làm việc với PDF thường xuyên → cần thêm demo Appendix A2 nếu có thời gian")*
+**→ Hành động cụ thể từ v1.3:**
+1. Thêm Slide 5 mới: "Bước-từng-bước ẩn danh hóa tài liệu trước khi dùng AI"
+2. Nhắc nhở anonymization ở mỗi demo, không chỉ slide security đầu ngày
+3. Confirm với Thiên Kim về policy GoldBug US trước ngày 16/06
 
 ---
 
-## 8. Các bên giao tiếp bên ngoài / nội bộ
+## 8. Insight theo Vai trò
 
-| Bên liên quan | Số người làm việc cùng | Ngôn ngữ chính |
-|---|---|---|
-| GoldBug US | | Tiếng Anh |
-| Nhà máy / Factory | | Tiếng Việt |
-| Vendor / Nhà cung cấp | | Tiếng Việt / Anh |
-| Lab (SGS, Intertek...) | | Tiếng Anh |
-| Nội bộ Redbug Vietnam | | Tiếng Việt |
-| Khác | | |
+### Thiên Kim — Country Manager / Leadership
+- Confidence: **3 / 5**
+- Nhu cầu: Monthly report / dashboard, factory performance, training material, risk escalation
+- Workflow phù hợp: WF5 (Dashboard), WF6 (Training Material)
+- Lưu ý: Có thể đóng vai "early adopter" để inspire team trong buổi training
 
-**Ghi chú:** Xác nhận tỷ lệ email tiếng Anh vs tiếng Việt của từng vai trò để điều chỉnh prompt constraints.
+### Kim Thoa — Footwear Technical / Quality
+- Confidence: **2 / 5**
+- Nhu cầu: Báo cáo tháng, bảng so sánh báo giá, tech pack reading, inspection report, defect description
+- Workflow phù hợp: WF2, WF3, WF5 (toàn bộ dashboard)
+- Lưu ý: Key user cho Demo WF5 — cần confirm có data mẫu giả lập không (deadline 14/06)
 
----
+### Hải Yến — Product Development
+- Confidence: **3 / 5**
+- Nhu cầu: Tech pack / DCL comparison, sample tracking, defect report, long email summary
+- Workflow phù hợp: WF1, WF2, WF3
 
-## 9. Câu hỏi và Lo ngại Bảo mật
+### Sandra — Product Development
+- Confidence: **2 / 5**
+- Nhu cầu: Final inspection report, defect description, sample/order tracking
+- Workflow phù hợp: WF3, WF1
+- Lưu ý: Confidence thấp → cần thêm thời gian hands-on, ưu tiên nhóm nhỏ có người hỗ trợ
 
-| Câu hỏi / Lo ngại | Số người đề cập | Đã giải quyết trong v1.2? |
-|---|---|---|
-| "AI có bảo mật thông tin tôi chia sẻ không?" | 1 (Kim Thoa) | ✅ File 01 + Slide 3 |
-| "Công ty có policy AI chưa?" | | ✅ Trả lời trong Facilitator Notes |
-| "Dùng AI có vi phạm hợp đồng với GoldBug US không?" | | ❓ Chưa có |
-| "AI có lưu dữ liệu công ty không?" | | ✅ Slide 3 |
-| Lo ngại khác | | |
+### Lan Anh — QC Inspector
+- Confidence: **2 / 5**
+- Nhu cầu: Inspection report, defect description bằng tiếng Anh, CAPA email, manual / tech pack reading
+- Workflow phù hợp: WF1, WF3, WF4
+- Lưu ý: Ghép nhóm với Khánh Linh trong hands-on — cùng workflow WF3
 
-**Action items bảo mật cần giải quyết trước training:**
-> *(Điền sau — VD: nếu nhiều người lo ngại về hợp đồng với GoldBug, cần confirm với Thiên Kim trước ngày 16/06)*
+### Khánh Linh — QC Inspector
+- Confidence: **2 / 5**
+- Nhu cầu: Inspection report, defect description, root cause, email summary
+- Workflow phù hợp: WF1, WF3, WF4
+- Lưu ý: Tương tự Lan Anh — nên cùng nhóm để hỗ trợ nhau
 
----
+### Xuân Trâm — QA/QC Management
+- Confidence: **3 / 5**
+- Nhu cầu: DCL comparison, CAPA follow-up, factory risk, monthly quality report
+- Workflow phù hợp: WF2, WF4, WF5
+- Lưu ý: Có thể chạy demo WF4 (CAPA) với real data đã anonymize trong phần hands-on
 
-## 10. Insight theo Vai trò
-
-### Country Manager
-- Confidence: __ / 5
-- Pain points nổi bật:
-- Use cases ưu tiên:
-- Điều chỉnh cần thiết cho Demo 1:
-
-### Merchandiser
-- Confidence: __ / 5
-- Pain points nổi bật:
-- Use cases ưu tiên:
-- Điều chỉnh cần thiết cho Demo 2:
-
-### Product Developer
-- Confidence: __ / 5
-- Pain points nổi bật:
-- Use cases ưu tiên:
-- Điều chỉnh cần thiết cho Demo 3:
-
-### Footwear Technical / Quality (Kim Thoa)
-- Confidence: 2 / 5 *(đã có từ survey đầu tiên)*
-- Pain points: Bảng so sánh báo giá, báo cáo tháng, priority list, sample tracking
-- Use cases ưu tiên: Demo 7 toàn bộ
-- Điều chỉnh: Không cần — Demo 7 được thiết kế trực tiếp từ survey này
-
-### QA/QC Manager + QC Inspectors
-- Confidence: __ / 5
-- Pain points nổi bật:
-- Use cases ưu tiên:
-- Điều chỉnh cần thiết cho Demo 4:
-
-### Senior CSR / Audit / Chemical Compliance
-- Confidence: __ / 5
-- Pain points nổi bật:
-- Use cases ưu tiên:
-- Điều chỉnh cần thiết cho Demo 5:
-
-### Office Admin
-- Confidence: __ / 5
-- Pain points nổi bật:
-- Use cases ưu tiên:
-- Điều chỉnh cần thiết cho Demo 6:
+### Hạnh — Office Admin
+- Confidence: **Chưa có** (survey chưa nhận được)
+- Workflow dự kiến: WF7 (Office Admin — travel, expense, admin tasks)
+- Lưu ý: Giữ WF7 như Appendix A1. Nếu Hạnh gửi response trước 15/06, cập nhật thêm.
 
 ---
 
-## 11. Điều chỉnh Training cần thiết sau Survey
+## 9. Thứ tự ưu tiên Demo / Workflow (v1.3)
 
-> Điền sau khi đọc xong tất cả responses. Đây là phần quan trọng nhất của file này.
+| Thứ tự | Workflow Demo | Lý do ưu tiên | Thay đổi so với v1.2? |
+|---|---|---|---|
+| 1 | WF0 – AI Security + Anonymization | Lo ngại bảo mật từ nhiều người — phải giải quyết đầu tiên | **Mở rộng: thêm Slide Anonymization Protocol** |
+| 2 | WF3 – Inspection Report + Defect | 4+ người cần trực tiếp (Lan Anh, Khánh Linh, Sandra, Xuân Trâm) | **Mới — thay Demo 4 cũ** |
+| 3 | WF1 – Long Email / Manual Summary | Tất cả vai trò có nhu cầu — demo nhanh nhất để thuyết phục | **Mới thêm vào** |
+| 4 | WF4 – CAPA / Root Cause / Factory Risk | QA/QC + Footwear Quality | **Mở rộng từ Demo 4+5 cũ** |
+| 5 | WF5 – Monthly Dashboard ⭐ | Pain point phổ biến nhất, demo ấn tượng nhất | Giữ nguyên ưu tiên cao |
+| 6 | WF2 – Tech Pack / DCL Comparison | PD + QA/QC — nhu cầu thực tế cao | **Mới thêm vào** |
+| 7 | WF6 – Training Material | Thiên Kim + PD — cần nhưng không khẩn cấp | **Mới — mini-demo ngắn** |
+| 8 | WF7 – Office Admin | **Pending Hạnh** | Appendix A1 |
 
-### Điều chỉnh PHẢI làm (blockers):
+**Demo có thể cắt ngắn nếu trễ giờ:** WF6 (Training Material), WF2 (Tech Pack/DCL).
 
-| # | Điều chỉnh | File bị ảnh hưởng | Mức độ | Người thực hiện |
-|---|---|---|---|---|
-| 1 | | | 🔴 Cao | |
-| 2 | | | 🔴 Cao | |
+---
 
-### Điều chỉnh NÊN làm (nếu có thời gian trước 16/06):
+## 10. Điều chỉnh Training cần thiết sau Survey (v1.3)
+
+### Điều chỉnh PHẢI làm:
 
 | # | Điều chỉnh | File bị ảnh hưởng | Mức độ |
 |---|---|---|---|
-| 1 | | | 🟡 Trung bình |
-| 2 | | | 🟡 Trung bình |
+| 1 | Chuyển slide outline sang workflow-based | 05_slide_outline.md | 🔴 Cao |
+| 2 | Thêm slide Anonymization Protocol (Ctrl+F / Replace All step-by-step) | 05_slide_outline.md | 🔴 Cao |
+| 3 | Thêm 6 Workflow Demos mới vào Demo Pack | 02_demo_exercise_pack.md | 🔴 Cao |
+| 4 | Cập nhật Pilot Tracker theo workflow-based assignments | 03_2week_pilot_tracker.md | 🔴 Cao |
+| 5 | Thêm "Workflow-based Prompt Starters" vào Prompt Library | 01_prompt_library_by_role.md | 🔴 Cao |
 
-### Điều chỉnh để sau training (v1.3+):
+### Điều chỉnh NÊN làm (nếu có thời gian trước 16/06):
+
+| # | Điều chỉnh | Mức độ |
+|---|---|---|
+| 1 | Confirm với Thiên Kim về GoldBug US AI policy | 🟡 Trung bình |
+| 2 | Confirm Kim Thoa có sẵn data giả lập cho WF5 Dashboard không | 🟡 Trung bình |
+| 3 | Chuẩn bị phân nhóm hands-on: nhóm QC (Lan Anh + Khánh Linh) cùng nhau | 🟡 Trung bình |
+
+### Điều chỉnh sau training (v1.4+):
 
 | # | Điều chỉnh | Lý do hoãn |
 |---|---|---|
-| 1 | | |
-| 2 | | |
+| 1 | WF7 Office Admin — hoàn thiện sau khi nhận survey từ Hạnh | Pending response |
+| 2 | AI tool comparison chi tiết (ChatGPT vs Claude vs Gemini) | Cần biết team đang dùng gì trước |
 
 ---
 
-## 12. Thứ tự ưu tiên Demo (cập nhật sau survey)
+## 11. Pilots được khuyến nghị cuối cùng (v1.3)
 
-> Sắp xếp lại nếu survey cho thấy nhu cầu khác với giả định ban đầu
-
-| Thứ tự | Demo | Lý do ưu tiên | Thay đổi so với v1.2? |
+| Pilot | Owner | Workflow | Data sẵn sàng? |
 |---|---|---|---|
-| 1 | Demo 7 – Monthly Report | Pain point phổ biến nhất, nhiều vai trò liên quan | Giữ nguyên |
-| 2 | Demo 4 – QA/QC + CAPA | | |
-| 3 | Demo 2 – Merchandising | | |
-| 4 | Demo 3 – Tech Pack Comment | | |
-| 5 | Demo 5 – CSR/Compliance | | |
-| 6 | Demo 1 – Brand/Product | | |
-| 7 | Demo 6 – Office Admin | | |
-
-**Demo nào có thể cắt ngắn nếu trễ giờ:** *(Điền sau)*
+| Monthly Operations / Quality / Sample Progress Dashboard | Kim Thoa | WF5 | ❓ Cần confirm trước 14/06 |
+| PO Master + Inspection Timing + Shipment Risk Dashboard | Thiên Kim | WF5 | ❓ |
+| Final Inspection Report + Defect Description | Hải Yến, Sandra | WF3 | ✅ Thường xuyên có |
+| Long Technical Email / Manual Summary | Lan Anh + QC team | WF1 | ✅ Thường xuyên có |
+| DCL Comparison + CAPA / Factory Risk | Xuân Trâm | WF2, WF4 | ❓ Cần confirm |
+| Office Admin Assistant | Hạnh | WF7 | **Pending survey response** |
 
 ---
 
-## 13. Pilots được khuyến nghị cuối cùng (Final)
-
-> So sánh với Pilot Shortlist trong File 03. Điều chỉnh nếu survey cho thấy owner khác.
-
-| Pilot | Owner xác nhận | Data họ có sẵn không? | Ghi chú |
-|---|---|---|---|
-| Monthly Tech/Quality/Sample Report | Kim Thoa | ❓ | Cần hỏi Kim Thoa trước ngày training |
-| Inspection Report + CAPA | Xuân Trâm + QC | ❓ | |
-| Sample Follow-up Email | Sandra | ❓ | |
-| CSR/Audit CAPA | Tú Anh / Anna | ❓ | |
-| Travel/Expense/Admin | Hạnh | ✅ Thường xuyên có | |
-
----
-
-## 14. Câu hỏi còn mở trước ngày training
-
-> Danh sách câu hỏi cần trả lời hoặc quyết định trước 16/06. Xóa khi đã giải quyết.
+## 12. Câu hỏi còn mở trước ngày training
 
 | # | Câu hỏi | Người cần trả lời | Deadline | Trạng thái |
 |---|---|---|---|---|
-| 1 | Kim Thoa có thể chuẩn bị data mẫu giả lập (sample tracker + defect data tháng 6) trước ngày training không? | Kim Thoa | 14/06 | ❓ Chưa hỏi |
-| 2 | Team đang dùng ChatGPT Free hay Plus? Có account nào dùng chung không? | Thiên Kim | 13/06 | ❓ Chưa hỏi |
-| 3 | Phòng training có WiFi ổn định không? Tốc độ khoảng bao nhiêu? | Hạnh / Office | 14/06 | ❓ Chưa kiểm tra |
-| 4 | Có màn hình chiếu và HDMI không? Cần mang laptop cá nhân không? | Hạnh / Office | 14/06 | ❓ Chưa kiểm tra |
-| 5 | Có ai tham gia online không? (Zoom/Teams setup cần không?) | Thiên Kim | 13/06 | ❓ Chưa xác nhận |
-| 6 | Policy của GoldBug US về việc dùng AI có ảnh hưởng gì đến Redbug không? | Thiên Kim | 13/06 | ❓ Cần confirm |
-| 7 | *(Thêm câu hỏi từ survey)* | | | |
+| 1 | Hạnh có gửi survey response không? | Hạnh | 15/06 | ❓ Chờ |
+| 2 | Kim Thoa có thể chuẩn bị data mẫu giả lập (sample tracker + defect tháng 6) không? | Kim Thoa | 14/06 | ❓ Chưa hỏi |
+| 3 | GoldBug US có policy về việc dùng AI — ảnh hưởng gì đến Redbug không? | Thiên Kim | 13/06 | ❓ Cần confirm |
+| 4 | Team đang dùng ChatGPT Free hay Plus? Có account nào dùng chung không? | Thiên Kim | 13/06 | ❓ Chưa hỏi |
+| 5 | Phòng training có WiFi ổn định không? | Hạnh / Office | 14/06 | ❓ Chưa kiểm tra |
+| 6 | Có màn hình chiếu và HDMI không? | Hạnh / Office | 14/06 | ❓ Chưa kiểm tra |
+| 7 | Có ai tham gia online không? (Zoom/Teams setup cần không?) | Thiên Kim | 13/06 | ❓ Chưa xác nhận |
 
 ---
 
-*v1.2 | Template tạo sẵn — điền sau khi đóng survey | Không chứa dữ liệu cá nhân nhạy cảm*
+*v1.3 | Cập nhật 12/06/2026 | 7 / 11 phản hồi | Chuyển hướng workflow-based | Hạnh / Office Admin — pending appendix*

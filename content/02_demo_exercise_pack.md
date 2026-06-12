@@ -136,3 +136,222 @@ Lập lịch trình chi tiết (Itinerary) để gửi cho khách và tài xế.
 
 **5. Prompt Thực Hành:**
 > "Đóng vai Office Manager, hãy lên một lịch trình di chuyển chi tiết (Travel Itinerary) chuyên nghiệp cho chuyến đi thăm nhà máy với các dữ kiện sau: [Paste dữ liệu]. Hãy phân bổ thời gian hợp lý (tính toán thời gian di chuyển từ Q1 -> Thuận An khoảng 45p, Thuận An -> Bến Cát khoảng 40p). Cung cấp 2 phiên bản: 1 bản chi tiết gửi khách US (Tiếng Anh), 1 bản tóm tắt giờ giấc gửi tài xế (Tiếng Việt)."
+
+---
+
+---
+
+## Workflow Demos v1.3 (Survey-driven)
+> Cập nhật v1.3 | 12/06/2026 | Dựa trên 7 phản hồi khảo sát | Workflow-based framing
+> Mỗi demo phục vụ nhiều vai trò cùng lúc thay vì chỉ 1 role
+
+---
+
+## Workflow Demo A: Long Technical Email Thread → Summary + Action Items
+**Dành cho:** Tất cả — đặc biệt QC Inspector (Lan Anh, Khánh Linh), QA/QC Manager (Xuân Trâm), PD (Hải Yến, Sandra)
+
+**1. Objective (Mục tiêu):**
+Biến một chuỗi email dài, lộn xộn từ nhà máy hoặc vendor thành bản tóm tắt rõ ràng và danh sách action items trong dưới 3 phút.
+
+**2. Fictional/Anonymized Input Data:**
+*Email thread (đã anonymize):*
+
+> **From:** Factory A – Production Manager | **Subject:** Re: Re: Re: Update on Style-XXXX Swaddle Blanket order
+>
+> Email 1 (3 ngày trước): "Dear Team, we have a fabric shortage issue. The knit supplier delivered wrong GSM (180g instead of 200g). We rejected and reordered. New delivery in 4 days."
+>
+> Email 2 (2 ngày trước): "Update: fabric arrived but color shade is slightly off. We are checking with lab. Meanwhile starting cutting for unaffected styles."
+>
+> Email 3 (hôm nay): "Lab result shows color within tolerance (+0.5 DE). We can proceed. However, sewing line capacity reduced this week — 2 workers on sick leave. New completion estimate: 3 days delay. We will compensate with weekend overtime."
+
+**3. Copy/Paste Prompt:**
+> "Đây là chuỗi email giữa tôi và Factory A về đơn hàng Style-XXXX. Hãy tóm tắt:
+> 1. Vấn đề chính là gì? (1–2 câu)
+> 2. Trạng thái hiện tại? (1 câu)
+> 3. Action items tôi cần làm ngay hôm nay? (bullet points, ưu tiên theo mức độ quan trọng)
+> 4. Rủi ro cần báo cáo lên Manager?
+> [Paste email thread vào đây]"
+
+**4. Expected Output (Kết quả mong đợi):**
+- Đoạn tóm tắt 2–3 câu mô tả rõ vấn đề + trạng thái hiện tại
+- Danh sách 3–5 action items có mức ưu tiên (Urgent / Normal)
+- 1 câu risk note để báo cáo lên manager
+
+**5. Safety Reminder:**
+⚠️ Trước khi paste email thật: Replace tên nhà máy → Factory A, mã PO thật → PO-XXXX, tên style thật → Style-XXXX, tên người thật → Person A.
+
+**6. Participant Hands-on Task:**
+Mở AI tool. Dán fictional email thread trên. Chạy prompt. Đọc kết quả và trả lời: Action item nào AI đề xuất mà bạn có thể làm ngay hôm nay?
+
+---
+
+## Workflow Demo B: Tech Pack / Manual / DCL Comparison Assistant
+**Dành cho:** Product Developer (Hải Yến, Sandra), Footwear Quality (Kim Thoa), QA/QC Manager (Xuân Trâm)
+
+**1. Objective (Mục tiêu):**
+Tìm nhanh những thay đổi giữa 2 version Tech Pack, DCL, hoặc Manual mà không cần đọc lại toàn bộ tài liệu. Tiết kiệm 30–60 phút đọc thủ công.
+
+**2. Fictional/Anonymized Input Data:**
+*Spec v1 (cũ):*
+> Component: Outer fabric — 100% Polyester, 300D Oxford, 280 gsm, Navy Blue (Pantone 19-4024)
+> Zipper: YKK #5 Nylon Coil, color: Black, Length: 45cm
+> Lining: 100% Polyester taffeta, 70D, White
+> Handle: 25mm polypropylene webbing, stitched both sides
+
+*Spec v2 (mới từ Customer X):*
+> Component: Outer fabric — 100% Recycled Polyester, 300D Oxford, 280 gsm, Navy Blue (Pantone 19-4024)
+> Zipper: YKK #5 Nylon Coil, color: Navy Blue (must match outer), Length: 45cm
+> Lining: 100% Polyester taffeta, 70D, Light Grey (new)
+> Handle: 30mm polypropylene webbing, stitched both sides, Bar-tack reinforcement required
+
+**3. Copy/Paste Prompt:**
+> "Đọc Spec v1 (cũ) và Spec v2 (mới) sau đây. Liệt kê chính xác những thông số hoặc vật tư đã thay đổi. Tạo bảng gồm: Component | Spec v1 | Spec v2 | Mức độ ảnh hưởng (Cao/TB/Thấp) | Cần thông báo nhà máy ngay không?
+> [Paste Spec v1]
+> [Paste Spec v2]"
+
+**4. Expected Output:**
+Bảng 5 cột: Outer fabric (Recycled — Cao), Zipper color (Navy — Trung bình), Lining color (Light Grey — Trung bình), Handle width + bar-tack (Cao — ảnh hưởng pattern + cost).
+
+**5. Safety Reminder:**
+⚠️ Khi paste DCL hoặc Tech Pack thật: Ẩn số style → Style-XXXX, tên khách hàng → Customer X, xóa bất kỳ giá / cost nào trước khi paste.
+
+**6. Participant Hands-on Task:**
+Chạy prompt với fictional spec. Sau đó hỏi thêm: "Handle thay đổi từ 25mm lên 30mm + bar-tack sẽ ảnh hưởng như thế nào đến cost và quy trình sản xuất?" — xem AI trả lời gì.
+
+---
+
+## Workflow Demo C: Inspection Report + Defect Description Assistant
+**Dành cho:** QC Inspector (Lan Anh, Khánh Linh), QA/QC Manager (Xuân Trâm), PD (Sandra)
+
+**1. Objective (Mục tiêu):**
+Chuyển ghi chú tay lộn xộn sau khi đi kiểm hàng thành Inspection Report tiếng Anh chuẩn + mô tả từng lỗi bằng thuật ngữ chuyên ngành trong 5–10 phút.
+
+**2. Fictional/Anonymized Input Data (Ghi chú tay của QC):**
+> PO-XXXX, Swaddle Blanket, Factory A.
+> Số lượng kiểm: 200 pcs (AQL 2.5 Level II → accept ≤5 Major / ≤8 Minor).
+> Lỗi phát hiện:
+> - Dơ dầu máy: 5 cái (Major) — vết dầu to hơn 5mm ở góc chăn
+> - Đứt chỉ đường viền: 3 cái (Minor) — chỉ bị đứt đoạn ~2–3cm
+> - Hụt size chiều dài 2cm: 4 cái (Major) — đo 96cm thay vì 98cm theo spec
+> - Label may lệch quá 1cm: 1 cái (Minor)
+> Kết quả: FAIL (Major count 9 > AQL accept point 5)
+
+**3. Copy/Paste Prompt:**
+> "Tôi là QC Inspector. Từ ghi chú đi kiểm hàng sau, hãy giúp tôi:
+> 1. Viết một đoạn Inspection Summary bằng tiếng Anh chuyên nghiệp (3–5 câu, gồm: product, quantity inspected, AQL standard, result, major defects found).
+> 2. Tạo bảng Defect List: STT | Defect Name (English) | Defect Description (English technical) | Classification (Major/Minor) | Qty | % Defect Rate.
+> 3. Viết email ngắn tiếng Anh gửi Factory A (cc QA Manager): thông báo FAIL, yêu cầu 100% sort + CAPA form trong 48h.
+> [Paste ghi chú kiểm hàng vào đây]"
+
+**4. Expected Output:**
+- Đoạn Inspection Summary ~4 câu tiếng Anh chuyên nghiệp
+- Bảng defect: "Machine oil stain (Major)", "Open seam / skipped stitch (Minor)", "Measurement out of tolerance — length (Major)", "Misaligned label (Minor)"
+- Email tiếng Anh ~150–200 từ, tone chuyên nghiệp, deadline 48h
+
+**5. Safety Reminder:**
+⚠️ Đã dùng PO-XXXX và Factory A. Khi dùng data thật: Ctrl+F replace PO thật → PO-XXXX, tên nhà máy thật → Factory A trước khi paste.
+
+**6. Participant Hands-on Task:**
+Lan Anh / Khánh Linh: Chạy prompt với fictional notes. Sau đó thử thêm: "Mô tả lỗi 'vải bị chun ở đường may nách áo' bằng tiếng Anh chuyên ngành QC." — xem AI mô tả như thế nào.
+
+---
+
+## Workflow Demo D: CAPA / Root Cause / Factory Risk Assistant
+**Dành cho:** QA/QC Manager (Xuân Trâm), Footwear Quality (Kim Thoa)
+
+**1. Objective (Mục tiêu):**
+Phân tích nguyên nhân gốc rễ (Root Cause) của lỗi sản xuất, viết phản hồi CAPA chuyên nghiệp, và đánh giá rủi ro nhà máy dựa trên trend dữ liệu.
+
+**2. Fictional/Anonymized Input Data:**
+*Lịch sử lỗi Factory A (3 tháng):*
+> Tháng 4: Open seam — 15 pcs / 500 pcs kiểm → 3.0%
+> Tháng 5: Open seam — 18 pcs / 480 pcs → 3.75%
+> Tháng 6: Open seam — 22 pcs / 400 pcs → 5.5%
+>
+> CAPA nhà máy gửi: "We will remind workers to be more careful and check stitching before packing."
+
+**3. Copy/Paste Prompt:**
+> "Tôi là QA Manager tại Redbug. Factory A có lỗi open seam tăng dần 3 tháng qua: [paste trend data]. Họ gửi CAPA: '[paste CAPA nhà máy]'.
+> Hãy:
+> 1. Giải thích tại sao CAPA này không đạt (không có Root Cause thực sự).
+> 2. Soạn email tiếng Anh bác bỏ CAPA hiện tại, yêu cầu phân tích 5 Whys cho lỗi open seam với trend tăng.
+> 3. Gợi ý 4 Preventive Actions thực tế (không phải 'nhắc nhở công nhân').
+> 4. Đánh giá Factory A Risk Level (Low/Medium/High) dựa trên trend và giải thích."
+
+**4. Expected Output:**
+- 2–3 câu giải thích tại sao "nhắc nhở" không phải Root Cause
+- Email tiếng Anh chuyên nghiệp, nêu rõ trend, yêu cầu 5 Whys
+- 4 Preventive Actions cụ thể: kiểm tra tension chỉ, calibrate máy, thêm inline check point, training kỹ thuật viên
+- Risk Assessment: High (3-month upward trend, 5.5% > 3% threshold)
+
+**5. Safety Reminder:**
+⚠️ Tên nhà máy đã thay thành "Factory A". Khi dùng data thật: Replace tên nhà máy và mã PO trước khi paste trend data và CAPA.
+
+**6. Participant Hands-on Task:**
+Xuân Trâm: Chạy prompt với fictional data. Sau đó hỏi thêm: "Nếu Factory A tiếp tục không cải thiện sau CAPA lần 2, tôi cần thông báo cho GoldBug US như thế nào?" — xem AI gợi ý escalation path.
+
+---
+
+## Workflow Demo E: Monthly Operations / Quality / Sample Progress Dashboard Assistant
+**Dành cho:** Kim Thoa (Footwear Quality), Thiên Kim (Country Manager), Xuân Trâm (QA/QC Manager)
+
+> Xem chi tiết tại **content/07_demo_monthly_report_assistant.md** — demo này có 7 bước đầy đủ trong file riêng.
+
+**1. Objective (Mục tiêu):**
+Tổng hợp dữ liệu tháng (sample tracker, order progress, defect summary, quotation) thành monthly operations dashboard + email báo cáo gửi GoldBug US trong dưới 20 phút.
+
+**2. Fictional/Anonymized Input Data:**
+Xem data giả lập đầy đủ trong **07_demo_monthly_report_assistant.md**.
+
+**3. Copy/Paste Prompts (7 bước tóm tắt):**
+- Bước 1: Priority list + overdue items
+- Bước 2: Order / sample progress summary
+- Bước 3: Defect trend analysis + Factory Risk Ranking
+- Bước 4: Quotation comparison (20 giây)
+- Bước 5: Monthly report synthesis
+- Bước 6: Email to GoldBug US (tiếng Anh ~200 từ)
+- Bước 7: Email nội bộ (tiếng Việt)
+
+**4. Expected Output:**
+Monthly report outline đầy đủ + 2 email sẵn sàng gửi (EN + VI).
+
+**5. Safety Reminder:**
+⚠️ Toàn bộ data giả lập dùng Factory A/B/C, Style-XXXX, PO-XXXX. Khi áp dụng với data thật: Ctrl+F replace tất cả tên nhà máy, mã PO, mã style, giá trước khi paste.
+
+**6. Participant Hands-on Task:**
+Kim Thoa chạy Bước 4 (Quotation Comparison) live. Sau đó tự chạy Bước 1–3 trong nhóm hands-on buổi chiều.
+
+---
+
+## Workflow Demo F: Training Material Presentation Assistant
+**Dành cho:** Thiên Kim (Country Manager), Hải Yến / Sandra (PD), Xuân Trâm (QA/QC Manager)
+
+**1. Objective (Mục tiêu):**
+Tạo nhanh outline và nội dung slide training nội bộ hoặc training cho nhà máy — tiết kiệm 1–2 giờ chuẩn bị tài liệu.
+
+**2. Fictional/Anonymized Input Data:**
+*Yêu cầu training:*
+> Cần tạo slide training cho team QC nhà máy (10 người) về quy trình FRI (Final Random Inspection) mới của Redbug — áp dụng từ tháng 7. Nội dung: AQL standard Redbug áp dụng, cách điền inspection report form, top 5 lỗi thường gặp và cách nhận dạng, checklist trước khi báo Pass/Fail.
+
+**3. Copy/Paste Prompt:**
+> "Tôi cần tạo slide training cho team QC nhà máy về quy trình FRI mới. Yêu cầu: [paste yêu cầu training].
+> Hãy tạo:
+> 1. Outline 6 slides (Tiêu đề + 3–5 bullet points nội dung mỗi slide).
+> 2. 3 Learning Objectives — những gì QC có thể làm được sau buổi training.
+> 3. 1 câu hỏi quiz cuối buổi (multiple choice) để kiểm tra hiểu bài.
+> Ngôn ngữ: tiếng Việt đơn giản, phù hợp với công nhân và tổ trưởng."
+
+**4. Expected Output:**
+- Outline 6 slides: Giới thiệu / AQL Standard / Inspection Process / Top 5 Defects / Cách điền Form / Checklist + Cam kết
+- 3 learning objectives đo lường được
+- 1 quiz question nhiều lựa chọn
+
+**5. Safety Reminder:**
+⚠️ Không đưa giá cả, cost, thông tin nhạy cảm về đơn hàng vào tài liệu training gửi nhà máy. Chỉ đưa quy trình + standard chung.
+
+**6. Participant Hands-on Task:**
+Chạy prompt với fictional training request. Sau đó thử thêm: "Chuyển slide 3 (Inspection Process) thành một flow diagram mô tả bằng text" — xem AI visualize quy trình như thế nào.
+
+---
+
+*v1.3 | Workflow Demos A–F thêm mới | 12/06/2026 | Survey-driven — 7 phản hồi*

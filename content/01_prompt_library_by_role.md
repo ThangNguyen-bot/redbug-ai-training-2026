@@ -12,6 +12,119 @@ Trước khi sử dụng bất kỳ prompt nào, hãy luôn nhớ:
 
 ---
 
+## A2. Hướng dẫn Ẩn Danh Hóa Tài Liệu Trước Khi Dùng AI (Anonymization Protocol — v1.3)
+> **Bắt buộc trước khi paste bất kỳ file / email / report / tech pack nào vào AI.**
+
+**Bước 1:** Copy nội dung vào một document mới (KHÔNG sửa file gốc)
+
+**Bước 2:** Dùng Ctrl+F → Replace All để thay thế toàn bộ thông tin nhạy cảm:
+
+| Thông tin cần ẩn | Thay bằng |
+|---|---|
+| Tên nhà máy (Factory name) | Factory A (Factory B, Factory C nếu có nhiều) |
+| Tên vendor / nhà cung cấp | Vendor B |
+| Tên khách hàng / brand | Customer X |
+| Số PO thật | PO-XXXX |
+| Mã style thật | Style-XXXX |
+| Giá / cost / margin / FOB | USD XXX hoặc [PRICE REMOVED] |
+| Tên người / địa chỉ email / SĐT | Person A / Email removed / Phone removed |
+
+**Bước 3:** Kiểm tra nhanh lần cuối — không còn thông tin nhạy cảm → Paste vào AI và dùng thoải mái.
+
+---
+
+## Workflow-based Prompt Starters (v1.3 — Survey-driven)
+> Dành cho tất cả vai trò | Bắt đầu từ đây nếu bạn chưa biết dùng prompt nào
+
+---
+
+### WF0 — Ẩn danh hóa tài liệu trước khi dùng AI
+> Dùng trước khi paste bất kỳ file thật nào vào AI
+
+**Prompt:**
+> "Tôi có một đoạn text từ [email / report / tech pack / manual] cần ẩn danh hóa trước khi dùng AI. Hãy đọc đoạn sau và chỉ ra những thông tin nào tôi cần Replace All trước khi paste: [Paste đoạn text vào đây]"
+
+*(Hoặc tự dùng Ctrl+F theo bảng ở mục A2 ở trên)*
+
+---
+
+### WF1 — Tóm tắt email / manual / tech pack dài
+> Dùng khi nhận được email dài, chuỗi email, hoặc tài liệu nhiều trang cần đọc nhanh
+
+**Prompt:**
+> "Đây là [email / chuỗi email / đoạn manual / section tech pack] đã ẩn danh hóa. Hãy tóm tắt:
+> 1. Vấn đề / nội dung chính là gì? (1–2 câu)
+> 2. Trạng thái hiện tại hoặc kết quả chính?
+> 3. Action items tôi cần làm ngay? (bullet points, theo mức độ ưu tiên)
+> [Paste nội dung vào đây]"
+
+---
+
+### WF2 — So sánh Tech Pack / DCL / Manual (2 versions)
+> Dùng khi nhận Tech Pack revision hoặc DCL mới cần tìm thay đổi
+
+**Prompt:**
+> "Đọc Version cũ và Version mới sau đây (đã ẩn danh hóa). Liệt kê chính xác những thông số, vật tư, yêu cầu đã thay đổi. Tạo bảng: Component | Version cũ | Version mới | Mức độ ảnh hưởng | Cần thông báo nhà máy ngay không?
+> [Paste Version cũ]
+> [Paste Version mới]"
+
+---
+
+### WF3 — Viết Inspection Report + mô tả defect bằng tiếng Anh
+> Dùng sau khi đi kiểm hàng về, có ghi chú tay cần chuyển thành report chuẩn
+
+**Prompt:**
+> "Tôi là QC Inspector. Từ ghi chú kiểm hàng sau (đã ẩn danh hóa), hãy:
+> 1. Viết Inspection Summary tiếng Anh chuyên nghiệp (product, quantity, AQL standard, result, major defects).
+> 2. Tạo bảng Defect List: Defect Name | Description (English) | Major/Minor | Qty | % Rate.
+> 3. Viết email ngắn tiếng Anh gửi nhà máy: thông báo Pass/Fail, yêu cầu action trong 48h.
+> [Paste ghi chú kiểm hàng]"
+
+---
+
+### WF4 — Phân tích Root Cause + viết CAPA chuyên nghiệp
+> Dùng khi nhận CAPA không đạt từ nhà máy hoặc cần phân tích lỗi lặp lại
+
+**Prompt:**
+> "Nhà máy gửi CAPA: '[paste CAPA nhà máy]'. Hàng tháng có lỗi [tên lỗi] với trend: [tháng 1: X%, tháng 2: Y%, tháng 3: Z%].
+> Hãy: 1. Giải thích tại sao CAPA này không đạt. 2. Soạn email phản hồi tiếng Anh yêu cầu 5 Whys analysis. 3. Gợi ý 4 Preventive Actions thực tế. 4. Đánh giá Factory Risk Level (Low/Medium/High)."
+
+---
+
+### WF5 — Tóm tắt monthly report / dashboard tháng
+> Dùng khi có data tháng cần tổng hợp thành báo cáo và email
+
+**Prompt:**
+> "Từ dữ liệu tháng sau (đã ẩn danh hóa), hãy:
+> 1. Tạo bảng ưu tiên: items overdue, at-risk, on-track.
+> 2. Tóm tắt factory performance: top defects, fail rate, risk level.
+> 3. Viết một đoạn Monthly Summary Report tiếng Anh ~150–200 từ gửi Management.
+> [Paste data tháng — sample tracker / order progress / defect summary]"
+
+---
+
+### WF6 — Tạo slide / outline training material
+> Dùng khi cần tạo nội dung training cho team nội bộ hoặc cho nhà máy
+
+**Prompt:**
+> "Tôi cần tạo slide training về [chủ đề]. Đối tượng: [team / nhà máy]. Thời lượng: [X phút]. Hãy tạo:
+> 1. Outline [N] slides với tiêu đề và 3–5 bullet points mỗi slide.
+> 2. 3 Learning Objectives.
+> 3. 1 câu hỏi quiz cuối buổi.
+> Ngôn ngữ: [tiếng Việt / tiếng Anh / song ngữ]."
+
+---
+
+### WF7 — Office Admin: Lịch trình / Expense / Thông báo nội bộ
+> Dùng cho travel itinerary, expense report, thông báo văn phòng — *(pending Hạnh survey response)*
+
+**Prompt:**
+> "Đóng vai Office Manager. [Mô tả yêu cầu: lịch trình / expense / thông báo].
+> Dữ liệu: [paste thông tin đã ẩn tên người / địa điểm cụ thể nếu cần].
+> Output mong muốn: [ví dụ: 2 phiên bản tiếng Anh + tiếng Việt / bảng markdown / email nội bộ ngắn]."
+
+---
+
 ## B. Công thức Prompt Chuẩn (Universal Prompt Formula)
 Để AI trả về kết quả tốt nhất, hãy sử dụng cấu trúc:
 **[Role] + [Task] + [Context] + [Output] + [Constraints]**
