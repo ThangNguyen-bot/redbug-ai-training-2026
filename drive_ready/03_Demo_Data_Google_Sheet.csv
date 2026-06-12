@@ -1,0 +1,71 @@
+Sheet,Category,Field A,Field B,Field C,Field D,Field E,Field F,Field G,Field H,Field I,Field J
+INSTRUCTIONS,How to use,Import this CSV into Google Sheets,Each Sheet column groups rows into a logical tab,Rename actual tabs by Sheet value,All data is fictional and anonymized,No real prices — use USD-A/B/C labels,Factory A/B/C are placeholders,,,,
+,,,,,,,,,,,,
+WF3_Inspection,Header,PO,Product,Factory,Inspection Date,Qty Inspected,AQL Standard,Defect Name,Defect Type,Major / Minor,Qty Found,Defect Rate %
+WF3_Inspection,Data,PO-1002,Baby Sleeping Bag Style-004,Factory A,10/06/2026,200,AQL 2.5 Level II,Open seam — back neckline,Stitching,Major,6,3.0%
+WF3_Inspection,Data,PO-1002,Baby Sleeping Bag Style-004,Factory A,10/06/2026,200,AQL 2.5 Level II,Pilling on outer fabric,Surface finish,Major,4,2.0%
+WF3_Inspection,Data,PO-1002,Baby Sleeping Bag Style-004,Factory A,10/06/2026,200,AQL 2.5 Level II,Zipper stiff / uneven,Zipper function,Minor,3,1.5%
+WF3_Inspection,Data,PO-1002,Baby Sleeping Bag Style-004,Factory A,10/06/2026,200,AQL 2.5 Level II,Care label misaligned >10mm,Label position,Major,4,2.0%
+WF3_Inspection,Data,PO-1002,Baby Sleeping Bag Style-004,Factory A,10/06/2026,200,AQL 2.5 Level II,Body length short 2cm (spec 70cm),Dimensional tolerance,Major,2,1.0%
+WF3_Inspection,Data,PO-1002,Baby Sleeping Bag Style-004,Factory A,10/06/2026,200,AQL 2.5 Level II,Uneven wadding filling — chest area,Filling defect,Major,1,0.5%
+WF3_Inspection,Summary,,,,,Total Major,17,Total Minor,3,,RESULT: FAIL (Major > AQL accept 5)
+WF3_Inspection,Packaging Notes,Cartons checked: 20,Missing lot number on box label: 8/20,No suffocation warning on inner poly bag: 20/20 — SAFETY CRITICAL,Missing hang tag: 12/20,,,,,,,
+,,,,,,,,,,,,
+WF4_CAPA,Header,Factory,Product,Defect Type,Month,Qty Inspected,Defects Found,Defect Rate %,3-Month Trend,CAPA Status,Redbug Assessment
+WF4_CAPA,Data,Factory A,Baby Carrier Cover Style-001,Open seam,April 2026,600,8,1.3%,Baseline,Accepted,Minor issue
+WF4_CAPA,Data,Factory A,Baby Carrier Cover Style-001,Open seam,May 2026,580,14,2.4%,Rising,CAPA Submitted,Insufficient — vague root cause
+WF4_CAPA,Data,Factory A,Baby Sleeping Bag Style-004,Open seam,June 2026,200,17,8.5%,Rising fast — FAIL,CAPA Submitted,REJECTED — requires 5 Whys
+WF4_CAPA,Factory A CAPA Text,Submitted CAPA (11/06/2026): Root Cause: Workers were not careful enough when sewing the neckline area.,Corrective Action: Reminded sewing workers to be more careful.,Preventive Action: Added QC check before packing.,Timeline: Immediate.,Redbug Assessment: INSUFFICIENT — 'worker carelessness' is a symptom not a root cause. Systemic issue suspected. 5 Whys required.,,,,,,
+WF4_CAPA,Risk Summary,Factory A,Open seam rate 8.5% (threshold 3.0%). 3 consecutive months rising. 2 CAPA submissions both insufficient.,RISK LEVEL: HIGH,Recommended action: formal CAPA rejection + 5 Whys requirement + increased inspection frequency,,,,,,
+,,,,,,,,,,,,
+WF5_SampleTracker,Header,Style,Product,Factory,Sample Type,Due Date,Status,Days Overdue / Remaining,Notes,Risk Level,,
+WF5_SampleTracker,Data,Style-001,Baby Carrier Cover,Factory A,Prototype,05/06/2026,OVERDUE,-7 days,Fabric supplier delay — new fabric ETA 14/06,HIGH,,
+WF5_SampleTracker,Data,Style-002,Swaddle Blanket,Factory A,Size Set,08/06/2026,OVERDUE,-4 days,PP comment seam issue unresolved,MEDIUM,,
+WF5_SampleTracker,Data,Style-003,Toddler Backpack,Factory B,Prototype,10/06/2026,Submitted OK,0,Awaiting Customer Y review,LOW,,
+WF5_SampleTracker,Data,Style-004,Baby Sleeping Bag,Factory A,Fit Sample,12/06/2026,FRI FAIL,0,See inspection PO-1002,HIGH,,
+WF5_SampleTracker,Data,Style-005,Diaper Bag,Factory C,Pre-Production,14/06/2026,Not Started,+2 days remaining,Factory waiting for fabric from Vendor Y,MEDIUM,,
+WF5_SampleTracker,Data,Style-006,Nursing Cover,Factory B,Fit Sample,15/06/2026,Submitted OK,+3 days remaining,Customer Y: minor comments — revision needed,LOW,,
+,,,,,,,,,,,,
+WF5_OrderTracker,Header,PO,Product,Factory,Order Qty,Production Status,Ship Date,Remaining Days,Risk Level,Blocking Issue,,
+WF5_OrderTracker,Data,PO-1001,Baby Carrier Cover,Factory A,2000 pcs,60% complete,25/06/2026,13 days,HIGH,Sample overdue — production may pause,,
+WF5_OrderTracker,Data,PO-1002,Swaddle Blanket,Factory A,5000 pcs,Pre-production hold,30/06/2026,18 days,MEDIUM,Size set approval pending,,
+WF5_OrderTracker,Data,PO-1003,Toddler Backpack,Factory B,1500 pcs,Fabric cutting 80%,28/06/2026,16 days,LOW,On track,,
+WF5_OrderTracker,Data,PO-1004,Nursing Cover,Factory B,3000 pcs,Sewing 40%,22/06/2026,10 days,LOW,On track,,
+WF5_OrderTracker,Data,PO-1005,Diaper Bag,Factory C,2500 pcs,Not started,05/07/2026,23 days,MEDIUM,Fabric not arrived from Vendor Y,,
+,,,,,,,,,,,,
+WF5_DefectSummary,Header,Factory,Product,Main Defect Type,Defect Rate % (Current),April %,May %,June %,3-Month Trend,Factory Risk Level,,
+WF5_DefectSummary,Data,Factory A,Baby Carrier Cover,Open seam,8.5%,1.3%,2.4%,8.5%,Rising fast,HIGH,,
+WF5_DefectSummary,Data,Factory A,Swaddle Blanket,Machine oil stain,3.2%,3.0%,3.1%,3.2%,Stable,MEDIUM,,
+WF5_DefectSummary,Data,Factory A,Baby Sleeping Bag,Open seam (same root),8.5%,N/A,N/A,8.5%,New product — same issue,HIGH,,
+WF5_DefectSummary,Data,Factory B,Nursing Cover,Measurement variance,1.8%,3.1%,2.3%,1.8%,Improving,LOW,,
+WF5_DefectSummary,Data,Factory B,Toddler Backpack,Zipper misalignment,2.5%,2.6%,2.5%,2.5%,Stable,LOW,,
+WF5_DefectSummary,Data,Factory C,Diaper Bag,Fabric pilling,4.1%,N/A,N/A,4.1%,New issue — first detected,MEDIUM,,
+WF5_DefectSummary,Risk Summary,Factory A: HIGH — open seam systemic issue + CAPA pending + 2 overdue samples,Factory B: LOW — improving trend,Factory C: MEDIUM — new pilling issue,,,,,,,,
+,,,,,,,,,,,,
+WF5_Quotation,Header,Item,Factory B (Current),Factory D (New),Factory E (Quote Only),Factory B Lead Time,Factory D Lead Time,Factory E Lead Time,Factory B MOQ,Factory D MOQ,Factory E MOQ,Factory B Track Record
+WF5_Quotation,Data,Toddler Backpack Style-003 (1500 pcs),USD-A,USD-B,USD-C,45 days,50 days,40 days,500 pcs,1000 pcs,2000 pcs,12 POs — 96% pass rate
+WF5_Quotation,Notes,Factory D is ~8% cheaper than Factory B (USD-B vs USD-A) but zero track record with Redbug,Factory E: cheapest but MOQ 2000 too high for this order and no track record,Recommendation: Stay with Factory B this season — trial Factory D with small Q3 order if quality confirmed,,,,,,,,,
+,,,,,,,,,,,,
+WF7_ExpenseTracker,Header,Date,Vendor,Invoice Number,Description,Amount (VND),Category,Status,Due Date,Notes,,
+WF7_ExpenseTracker,Data,02/06/2026,Vendor Y,INV2026-058,Electricity bill June 2026,3250000,Utilities,Paid,02/06/2026,,,
+WF7_ExpenseTracker,Data,05/06/2026,Vendor Z,INV2026-059,Internet service June 2026,850000,Utilities,Paid,05/06/2026,,,
+WF7_ExpenseTracker,Data,08/06/2026,Vendor W,INV2026-060,Office printer repair,1200000,Repairs & Maintenance,Paid,08/06/2026,,,
+WF7_ExpenseTracker,Data,10/06/2026,Vendor X,INV2026-061,Office supplies June 2026,1996500,Office Supplies,Pending,25/06/2026,Net 15 days,,
+WF7_ExpenseTracker,Data,12/06/2026,Vendor Y,INV2026-062,Client entertainment,2800000,Hospitality,Pending,27/06/2026,Receipt attached,,
+WF7_ExpenseTracker,Summary,TOTAL,,,,10096500,,,,,Pending: 4796500 VND,
+WF7_ExpenseTracker,Breakdown by Category,Utilities: 4100000 VND (40.6%),Office Supplies: 1996500 VND (19.8%),Repairs: 1200000 VND (11.9%),Hospitality: 2800000 VND (27.7%),,,,,,,,
+WF7_InvoiceDemo,Header,Field,Value,,,,,,,,
+WF7_InvoiceDemo,Data,Invoice Number,INV2026-061,,,,,,,,
+WF7_InvoiceDemo,Data,Vendor,Vendor X Office Supplies,,,,,,,,
+WF7_InvoiceDemo,Data,Invoice Date,10/06/2026,,,,,,,,
+WF7_InvoiceDemo,Data,Due Date,25/06/2026,,,,,,,,
+WF7_InvoiceDemo,Data,Payment Terms,Net 15 days,,,,,,,,
+WF7_InvoiceDemo,LineItem,A4 Paper 80gsm — 10 reams,850000 VND,,,,,,,,
+WF7_InvoiceDemo,LineItem,Ballpoint Pens box/12 — 5 boxes,175000 VND,,,,,,,,
+WF7_InvoiceDemo,LineItem,Printer Ink Cartridge Black — 2 units,560000 VND,,,,,,,,
+WF7_InvoiceDemo,LineItem,Sticky Notes Assorted — 3 packs,135000 VND,,,,,,,,
+WF7_InvoiceDemo,LineItem,Stapler + 1000 Staples — 1 set,95000 VND,,,,,,,,
+WF7_InvoiceDemo,Subtotal,Subtotal,1815000 VND,,,,,,,,
+WF7_InvoiceDemo,Tax,VAT 10%,181500 VND,,,,,,,,
+WF7_InvoiceDemo,Total,GRAND TOTAL,1996500 VND,,,,,,,,
+WF7_InvoiceDemo,Suggested Filename,20260610_VendorX_INV2026-061_1996500VND.pdf,,,,,,,,,
