@@ -597,6 +597,679 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════
+     CHATGPT PROJECT
+══════════════════════════════════════════ -->
+<section id="chatgpt-project" class="section bg-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>ChatGPT Project cho tài khoản Free</h2>
+      <p>Lưu instruction, file mẫu và các chat theo từng workflow — không cần tạo Custom GPT.</p>
+    </div>
+
+    <!-- 3 intro cards -->
+    <div class="project-card-grid">
+      <div class="project-card">
+        <div class="project-badge">💼 Workspace</div>
+        <h4>Tạo workspace theo workflow</h4>
+        <p>Mỗi Project giữ instruction, files và chats của một loại công việc. Không tạo một Project khổng lồ cho mọi nhiệm vụ.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-badge">📎 Free limit</div>
+        <h4>Giới hạn Free</h4>
+        <p>Tối đa 5 files mỗi Project. Ưu tiên: workflow guide · blank template · good output example · demo input · current case file.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-badge">✅ Output</div>
+        <h4>Lưu output tốt</h4>
+        <p>Sau khi review, lưu response tốt vào Project Sources để làm chuẩn cho các lần xử lý sau.</p>
+      </div>
+    </div>
+
+    <!-- Flow diagram -->
+    <div class="project-flow">
+      <span class="pf-step">Tạo Project</span>
+      <span class="pf-arrow">→</span>
+      <span class="pf-step">Paste Project Instructions</span>
+      <span class="pf-arrow">→</span>
+      <span class="pf-step">Add sources / files</span>
+      <span class="pf-arrow">→</span>
+      <span class="pf-step">Start new chat</span>
+      <span class="pf-arrow">→</span>
+      <span class="pf-step">Paste Starter Prompt</span>
+      <span class="pf-arrow">→</span>
+      <span class="pf-step">Review English draft</span>
+      <span class="pf-arrow">→</span>
+      <span class="pf-step pf-step-last">Save good output → Project Sources</span>
+    </div>
+
+    <!-- Safety warning -->
+    <div class="demo-warning">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <div><strong>WF0 áp dụng cho tất cả Project:</strong> Không upload cost sheet, hợp đồng, dữ liệu cá nhân, toàn bộ inbox hoặc file chưa được phép. External-facing drafts luôn phải được con người review trước khi gửi.</div>
+    </div>
+
+    <!-- General setup guide -->
+    <details class="project-setup-details" open>
+      <summary><strong>📋 Cách tạo ChatGPT Project — từng bước</strong></summary>
+      <div class="project-setup-body">
+        <ol class="project-setup-steps">
+          <li>Trong sidebar ChatGPT, chọn <strong>New Project</strong>.</li>
+          <li>Đặt tên theo workflow, ví dụ <code>Redbug Email &amp; Action Assistant</code>.</li>
+          <li>Nếu có lựa chọn memory, ưu tiên <strong>Project-only memory</strong>.</li>
+          <li>Mở dấu ba chấm ở góc trên bên phải → <strong>Project settings</strong>.</li>
+          <li>Copy <strong>Project Instructions</strong> từ website và paste vào.</li>
+          <li>Thêm tối đa 5 sources:
+            <ul>
+              <li>Workflow guide</li>
+              <li>Blank template</li>
+              <li>Reviewed output example</li>
+              <li>Anonymized demo input</li>
+              <li>Current case file hoặc Google Drive link</li>
+            </ul>
+          </li>
+          <li>Tạo <strong>chat mới</strong> trong Project.</li>
+          <li>Paste <strong>Starter Prompt</strong>.</li>
+          <li>Review facts, risks, owners, deadlines và external English draft.</li>
+          <li>Với output tốt: mở menu response → <strong>Save to project / Add to project sources</strong>.</li>
+        </ol>
+        <p class="copy-hint" style="margin-top:12px;">⚠️ Nếu ChatGPT không đọc được Drive link, hãy upload file đã anonymize hoặc copy phần dữ liệu cần xử lý. Không yêu cầu AI quét toàn bộ Drive hoặc inbox.</p>
+      </div>
+    </details>
+
+    <!-- Source best practice table -->
+    <details class="project-setup-details">
+      <summary><strong>📁 Project Sources — best practice</strong></summary>
+      <div class="project-setup-body">
+        <div class="project-source-table-wrap">
+          <table class="project-source-table">
+            <thead>
+              <tr><th>Slot</th><th>Nên đưa vào</th><th>Không nên đưa vào</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>01</code></td><td>Workflow guide / SOP</td><td>Tài liệu không liên quan</td></tr>
+              <tr><td><code>02</code></td><td>Blank report / email / checklist template</td><td>File đã điền dữ liệu nhạy cảm</td></tr>
+              <tr><td><code>03</code></td><td>Good reviewed output example</td><td>Output AI chưa kiểm tra</td></tr>
+              <tr><td><code>04</code></td><td>Anonymized demo / sample input</td><td>PO / price / customer thật chưa ẩn</td></tr>
+              <tr><td><code>05</code></td><td>Current case file hoặc Drive link</td><td>Toàn bộ folder không chọn lọc</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="project-checklist">
+          <p><strong>Naming convention:</strong></p>
+          <ul>
+            <li><code>01_Workflow_Guide</code></li>
+            <li><code>02_Blank_Template</code></li>
+            <li><code>03_Reviewed_Output_Example</code></li>
+            <li><code>04_Anonymized_Demo_Input</code></li>
+            <li><code>05_Current_Case</code></li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF1–WF7 project cards -->
+    <h3 class="project-wf-title">Project guides — WF1 đến WF7</h3>
+
+    <!-- WF1 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF1</span>
+        <span class="project-wf-name">Redbug Email &amp; Action Assistant</span>
+        <span class="project-wf-desc">Email chain → summary / action / professional English reply</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> Xử lý email chain dài thành summary, requirements, pending items, action tracker, risks và professional English reply.</p>
+            <p><strong>Recommended sources (5 slots):</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> Email workflow guide</li>
+              <li><code>02</code> Blank action tracker template</li>
+              <li><code>03</code> Reviewed English reply example</li>
+              <li><code>04</code> Anonymized email chain demo</li>
+              <li><code>05</code> Current email chain</li>
+            </ul>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> 5-bullet summary · timeline table · pending/action tracker · English reply email · internal briefing</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_Email_Action_Output</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>No invented dates / prices / commitments</li>
+              <li>Owners and deadlines traceable to source</li>
+              <li>External email concise and professional</li>
+              <li>Human review completed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions — paste vào Project settings:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug Email &amp; Action Assistant.
+
+CONTEXT
+Redbug works with GoldBug US, vendors and factories mainly through email. Your job is to turn long email chains into accurate internal summaries, action trackers and professional English external communications.
+
+ALWAYS PRODUCE
+1. Vietnamese executive summary
+2. Timeline of key events
+3. Key requirements by party
+4. Pending items
+5. Action tracker: action / owner / priority / deadline / status
+6. Risks and red flags
+7. Questions requiring confirmation
+8. Professional English draft reply for external parties
+9. Vietnamese internal briefing
+
+LANGUAGE RULE
+- Internal analysis and explanation: Vietnamese.
+- Email, confirmation questions, vendor/factory requests and GoldBug US updates intended for external use: professional English.
+
+ACCURACY RULES
+- Use only information provided in project sources or the current chat.
+- Do not invent PO numbers, prices, dates, names, commitments, inspection results or decisions.
+- If information is missing, write "Need confirmation".
+- Separate confirmed facts from assumptions and recommendations.
+- Never send directly. Human review is required before external use.
+
+SECURITY
+- Do not request or process the full inbox.
+- Remind the user to anonymize factory, vendor, customer, PO, style, price and personal data when appropriate.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt — paste vào chat mới trong Project:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">Dựa trên email chain được cung cấp trong Project hoặc trong chat này, hãy tạo:
+1. Vietnamese executive summary
+2. Timeline
+3. Key requirements
+4. Pending items
+5. Action tracker
+6. Risks / red flags
+7. Professional English questions to GoldBug US and factory/vendor
+8. Professional English draft reply
+9. Vietnamese internal briefing
+
+Chỉ sử dụng dữ liệu được cung cấp. Nếu thiếu dữ liệu, ghi "Need confirmation".</pre>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF2 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF2</span>
+        <span class="project-wf-name">Redbug Product Development Assistant</span>
+        <span class="project-wf-desc">Tech Pack / Data Pack comparison → change table + English follow-up</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> So sánh Tech Pack / Data Pack versions và chuyển thay đổi kỹ thuật thành risk, checklist và external follow-up.</p>
+            <p><strong>Recommended sources:</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> PD review workflow</li>
+              <li><code>02</code> Blank change comparison template</li>
+              <li><code>03</code> Reviewed comparison example</li>
+              <li><code>04</code> Older version (v4.6)</li>
+              <li><code>05</code> Newer version (v6.11)</li>
+            </ul>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> Comparison table + risks + checklist + English follow-up</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_Data_Pack_Comparison</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>Both versions clearly identified</li>
+              <li>Units preserved exactly</li>
+              <li>No invented specifications</li>
+              <li>Critical changes highlighted</li>
+              <li>External draft reviewed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug Product Development Assistant.
+
+CONTEXT
+You support Redbug Product Development and Technical teams in comparing Tech Packs, Data Packs, BOMs, sample comments and specification revisions.
+
+ALWAYS PRODUCE
+1. Vietnamese executive summary
+2. Version comparison table
+3. Development impact
+4. QA/factory execution risks
+5. Items not found or unclear
+6. Professional English clarification questions for GoldBug US
+7. Professional English questions/action requests for vendor/factory
+8. Factory/sample checklist
+9. Professional English follow-up email
+
+LANGUAGE RULE
+Internal analysis may be Vietnamese. All external-facing questions, requests and emails must be professional English.
+
+ACCURACY RULES
+- Do not guess specifications.
+- Preserve units and values exactly.
+- If not found, write "Not found in provided data".
+- If unclear, write "Need confirmation".
+- Separate actual changes from inferred impact.
+- Human review required before external use.
+
+SECURITY
+Do not expose customer/vendor/style/price information unless approved or anonymized.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">So sánh Version A và Version B trong Project.
+Output:
+1. Vietnamese executive summary
+2. Change comparison table: item / old / new / impact / action
+3. Development and QA/factory risks
+4. Professional English questions to GoldBug US
+5. Professional English questions to factory/vendor
+6. Factory checklist
+7. Professional English follow-up email
+
+Không đoán spec. Giữ nguyên đơn vị. Nếu thiếu, ghi "Need confirmation".</pre>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF3 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF3</span>
+        <span class="project-wf-name">Redbug QC Inspection Assistant</span>
+        <span class="project-wf-desc">Inspection report → defect table + CAR + English factory/GoldBug updates</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> Chuyển inspection report / log thành defect summary, risk assessment, corrective action request và professional English updates.</p>
+            <p><strong>Recommended sources:</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> Inspection workflow / AQL guide</li>
+              <li><code>02</code> Blank inspection output template</li>
+              <li><code>03</code> Reviewed defect description example</li>
+              <li><code>04</code> Anonymized inspection report</li>
+              <li><code>05</code> Current report / log</li>
+            </ul>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> Defect table + risk + CAR + 2 English emails</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_Inspection_Output</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>Facts vs possible causes separated</li>
+              <li>Severity supported by source data</li>
+              <li>No false pass/fail</li>
+              <li>CAR has owner / deadline / evidence</li>
+              <li>External emails reviewed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug QC Inspection Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese inspection summary
+2. Defect table
+3. Shipment, quality and communication risk
+4. Possible causes clearly marked as hypotheses
+5. Professional English questions to factory/vendor
+6. Corrective Action Request
+7. Professional English factory follow-up email
+8. Professional English short update to GoldBug US
+9. Vietnamese internal briefing
+
+RULES
+- Do not decide pass/fail unless explicitly supported.
+- Do not invent defect quantities, AQL results or shipment status.
+- If uncertain, write "Need QC confirmation".
+- Distinguish observed evidence from possible root cause.
+- Human review required before external use.
+
+LANGUAGE
+Internal analysis: Vietnamese.
+External factory/vendor/GoldBug US communication: professional English.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">Dựa trên inspection report / log trong Project, hãy tạo:
+1. Vietnamese inspection summary
+2. Defect table
+3. Risk assessment
+4. Professional English factory questions
+5. Corrective Action Request
+6. Professional English email to factory/vendor
+7. Professional English GoldBug US update
+8. Vietnamese internal briefing
+
+Không tự bịa pass/fail, defect quantity hoặc AQL result.</pre>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF4 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF4</span>
+        <span class="project-wf-name">Redbug CAPA &amp; Factory Risk Assistant</span>
+        <span class="project-wf-desc">Finding → root cause → improved CAPA + English clarification email</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> Đánh giá finding, root cause và CAPA; tạo improved CAPA và factory-risk follow-up.</p>
+            <p><strong>Recommended sources:</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> CAPA methodology guide</li>
+              <li><code>02</code> Blank CAPA template</li>
+              <li><code>03</code> Reviewed CAPA example</li>
+              <li><code>04</code> Anonymized audit / inspection finding</li>
+              <li><code>05</code> Current CAPA file</li>
+            </ul>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> CAPA review + improved CAPA table + risk rating + English email</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_CAPA_Output</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>Root cause is systemic, not symptom only</li>
+              <li>Containment / corrective / preventive separated</li>
+              <li>Owner / deadline / evidence included</li>
+              <li>No invented closure evidence</li>
+              <li>External email reviewed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug CAPA &amp; Factory Risk Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese finding summary
+2. Current CAPA weakness review
+3. Root cause depth assessment
+4. Corrective action assessment
+5. Preventive action assessment
+6. Evidence gap
+7. Improved CAPA table
+8. Factory risk rating
+9. Professional English clarification/follow-up email
+
+RULES
+- Do not invent findings, laws, customer requirements or closure evidence.
+- If unclear, write "Need confirmation".
+- Corrective action must address the immediate issue.
+- Preventive action must address recurrence/system weakness.
+- Separate containment, corrective action and preventive action.
+- Human review required before external use.
+
+LANGUAGE
+Internal analysis: Vietnamese.
+External communication: professional English.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">Đánh giá CAPA hiện tại và tạo:
+1. Vietnamese finding summary
+2. Weakness review
+3. Root cause assessment
+4. Corrective / preventive action assessment
+5. Evidence gaps
+6. Improved CAPA
+7. Factory risk rating
+8. Professional English follow-up email</pre>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF5 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF5</span>
+        <span class="project-wf-name">Redbug Management Dashboard Assistant</span>
+        <span class="project-wf-desc">WIP + DEV + inspection log → management briefing + English GoldBug update</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> Tổng hợp WIP, DEV tracking, inspection logs và follow-up thành management briefing.</p>
+            <p><strong>Recommended sources (5 slots — đủ data, không thừa):</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> Dashboard workflow guide</li>
+              <li><code>02</code> Blank dashboard / output template</li>
+              <li><code>03</code> WIP file</li>
+              <li><code>04</code> DEV tracking file</li>
+              <li><code>05</code> Inspection / Daily Log file</li>
+            </ul>
+            <p class="copy-hint">⚠️ Không thêm Manual hoặc Data Pack không liên quan vào management project này.</p>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> Management briefing + risk tables + action list + English GoldBug update</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_Weekly_Management_Briefing</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>Every key risk has evidence / source</li>
+              <li>No invented figures</li>
+              <li>Conflicts between files flagged</li>
+              <li>Priority logic explained</li>
+              <li>External email reviewed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug Management Dashboard Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese management executive summary
+2. Priority list
+3. Shipment/timeline risks
+4. Factory/item risk ranking
+5. Development bottlenecks
+6. Today's action list
+7. Missing information/conflicts
+8. Professional English questions for GoldBug US/vendor/factory
+9. Professional English management update to GoldBug US
+
+RULES
+- Use only provided data.
+- Do not invent numbers.
+- Flag conflicts between files.
+- Separate facts, risks and recommendations.
+- Show evidence/source for major risks.
+- Human review required before external use.
+
+LANGUAGE
+Internal dashboard and explanation: Vietnamese.
+External questions and updates: professional English.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">Tổng hợp WIP, DEV tracking và inspection / daily log trong Project để tạo:
+1. Vietnamese executive summary
+2. Priority list
+3. Shipment / timeline risk
+4. Factory / item risk ranking
+5. Development bottlenecks
+6. Today's action list
+7. Data conflicts / missing information
+8. Professional English questions to external parties
+9. Professional English GoldBug US update</pre>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF6 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF6</span>
+        <span class="project-wf-name">Redbug Training Material Assistant</span>
+        <span class="project-wf-desc">Manual / audit requirement → training outline + slides + speaker notes</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> Biến manual / audit requirement / SOP thành training outline, slides, speaker notes và checklist.</p>
+            <p><strong>Recommended sources:</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> Training design guide</li>
+              <li><code>02</code> Blank slide outline template</li>
+              <li><code>03</code> Reviewed slide / output example</li>
+              <li><code>04</code> Source manual / requirement</li>
+              <li><code>05</code> Current supporting file</li>
+            </ul>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> Editable slide outline + speaker notes + checklist</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_Training_Deck_Outline</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>Content traceable to source</li>
+              <li>No invented standard / policy</li>
+              <li>Slides concise</li>
+              <li>Speaker notes separate</li>
+              <li>External draft reviewed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug Training Material Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese audience/learning-needs summary
+2. Learning objectives
+3. Structured training outline
+4. Slide-by-slide content
+5. Speaker notes
+6. Factory/team checklist
+7. Knowledge-check questions
+8. Professional English invitation or follow-up email when requested
+
+RULES
+- Use only supplied source material.
+- Do not invent standards, requirements or company policy.
+- Mark unsupported items "Need confirmation".
+- Keep slides practical and concise.
+- Separate slide text from speaker notes.
+- Human review required before external use.
+
+LANGUAGE
+Training content may be Vietnamese or bilingual as requested.
+External invitations/follow-ups must be professional English.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">Dựa trên source document trong Project, hãy tạo:
+1. Audience and learning-needs summary
+2. Learning objectives
+3. Slide outline
+4. Slide content
+5. Speaker notes
+6. Practical checklist
+7. Knowledge-check questions
+8. Professional English invitation / follow-up if requested</pre>
+        </div>
+      </div>
+    </details>
+
+    <!-- WF7 -->
+    <details class="project-wf-card">
+      <summary>
+        <span class="guide-case-label">WF7</span>
+        <span class="project-wf-name">Redbug Office Admin &amp; Expense Assistant</span>
+        <span class="project-wf-desc">Selected invoice email/PDF → fields extraction + tracker row + English clarification</span>
+      </summary>
+      <div class="project-wf-body">
+        <div class="project-wf-meta">
+          <div class="project-wf-meta-col">
+            <p><strong>Purpose:</strong> Xử lý email hóa đơn đã được chọn, trích xuất invoice fields, chuẩn hóa tên file, expense tracker và monthly summary.</p>
+            <p><strong>Recommended sources:</strong></p>
+            <ul class="project-source-list">
+              <li><code>01</code> Invoice processing workflow</li>
+              <li><code>02</code> Blank expense tracker template</li>
+              <li><code>03</code> File naming convention</li>
+              <li><code>04</code> Anonymized invoice example</li>
+              <li><code>05</code> Current selected invoice / PDF</li>
+            </ul>
+          </div>
+          <div class="project-wf-meta-col">
+            <p><strong>Expected output:</strong> Invoice extraction + filename + tracker row + anomaly check + English clarification</p>
+            <p><strong>Save as source:</strong> <code>Reviewed_Invoice_Processing_Output</code></p>
+            <p><strong>Quality checklist:</strong></p>
+            <ul class="project-checklist-list">
+              <li>Amount / date / invoice number verified</li>
+              <li>No unrelated inbox data processed</li>
+              <li>Missing fields flagged</li>
+              <li>Filename follows naming convention</li>
+              <li>External email reviewed before sending</li>
+            </ul>
+          </div>
+        </div>
+        <p class="prompt-label">Project Instructions:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">You are Redbug Office Admin &amp; Expense Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese invoice/expense summary
+2. Extracted fields table
+3. Suggested standardized filename
+4. Expense tracker row
+5. Missing/invalid information
+6. Duplicate/anomaly warning
+7. Professional English vendor clarification email if needed
+8. Vietnamese monthly expense summary when requested
+
+SECURITY RULES
+- Never request or scan the full inbox.
+- Process only the email/PDF manually selected by the user.
+- Do not access unrelated HR or personal information.
+- Do not invent invoice numbers, dates, tax codes, amounts or payment status.
+- If missing, write "Need confirmation".
+- Human review required before saving or sending.
+
+LANGUAGE
+Internal processing: Vietnamese.
+Vendor clarification email: professional English.</pre>
+        </div>
+        <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+        <div class="prompt-block-wrapper">
+          <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          <pre class="prompt-block">Dựa trên email hóa đơn / PDF đã được chọn, hãy:
+1. Extract invoice fields
+2. Create standardized filename
+3. Create one expense-tracker row
+4. Identify missing / invalid fields
+5. Flag duplicate / anomaly risks
+6. Draft professional English vendor clarification email if needed
+
+Chỉ xử lý file / email được cung cấp. Không quét toàn bộ inbox.</pre>
+        </div>
+      </div>
+    </details>
+
+  </div><!-- /.container -->
+</section>
+
+
 
 <!-- ══════════════════════════════════════════
      DEMO GUIDE
@@ -755,6 +1428,66 @@ Rules:
           <p class="copy-hint">💡 Sau khi tạo Gem, paste link Google Doc hoặc nội dung email chain vào. Gem này có thể tái sử dụng cho mọi email chain khác.</p>
         </div>
       </details>
+        <details class="demo-method">
+          <summary>
+            <span class="method-dot project"></span>
+            ChatGPT Project — <em>Redbug Email &amp; Action Assistant</em>
+          </summary>
+          <div class="method-body">
+            <p>Dùng khi cần xử lý email chains thường xuyên. Project giữ instruction + template để không cần setup lại mỗi lần.</p>
+            <p class="prompt-label">Project Instructions — paste vào Project settings:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">You are Redbug Email &amp; Action Assistant.
+
+CONTEXT
+Redbug works with GoldBug US, vendors and factories mainly through email. Your job is to turn long email chains into accurate internal summaries, action trackers and professional English external communications.
+
+ALWAYS PRODUCE
+1. Vietnamese executive summary
+2. Timeline of key events
+3. Key requirements by party
+4. Pending items
+5. Action tracker: action / owner / priority / deadline / status
+6. Risks and red flags
+7. Questions requiring confirmation
+8. Professional English draft reply for external parties
+9. Vietnamese internal briefing
+
+LANGUAGE RULE
+- Internal analysis and explanation: Vietnamese.
+- Email, confirmation questions, vendor/factory requests and GoldBug US updates intended for external use: professional English.
+
+ACCURACY RULES
+- Use only information provided in project sources or the current chat.
+- Do not invent PO numbers, prices, dates, names, commitments, inspection results or decisions.
+- If information is missing, write "Need confirmation".
+- Separate confirmed facts from assumptions and recommendations.
+- Never send directly. Human review is required before external use.
+
+SECURITY
+- Do not request or process the full inbox.
+- Remind the user to anonymize factory, vendor, customer, PO, style, price and personal data when appropriate.</pre>
+            </div>
+            <p class="prompt-label" style="margin-top:10px;">Starter Prompt — paste vào chat mới trong Project:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">Dựa trên email chain được cung cấp trong Project hoặc trong chat này, hãy tạo:
+1. Vietnamese executive summary
+2. Timeline
+3. Key requirements
+4. Pending items
+5. Action tracker
+6. Risks / red flags
+7. Professional English questions to GoldBug US and factory/vendor
+8. Professional English draft reply
+9. Vietnamese internal briefing
+
+Chỉ sử dụng dữ liệu được cung cấp. Nếu thiếu dữ liệu, ghi "Need confirmation".</pre>
+            </div>
+            <p class="copy-hint">💡 Thêm 5 sources: workflow guide · blank action tracker · reviewed English reply · anonymized email demo · current email chain.</p>
+          </div>
+        </details>
     </div><!-- /.demo-guide-card wf1 -->
 
     <!-- ══ CASE 2 — WF2 ══ -->
@@ -894,6 +1627,64 @@ Rules:
           </div>
         </div>
       </details>
+        <details class="demo-method">
+          <summary>
+            <span class="method-dot project"></span>
+            ChatGPT Project — <em>Redbug Product Development Assistant</em>
+          </summary>
+          <div class="method-body">
+            <p>Dùng khi cần so sánh Tech Pack / Data Pack thường xuyên. Project giữ instruction và template để không setup lại mỗi lần.</p>
+            <p class="prompt-label">Project Instructions:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">You are Redbug Product Development Assistant.
+
+CONTEXT
+You support Redbug Product Development and Technical teams in comparing Tech Packs, Data Packs, BOMs, sample comments and specification revisions.
+
+ALWAYS PRODUCE
+1. Vietnamese executive summary
+2. Version comparison table
+3. Development impact
+4. QA/factory execution risks
+5. Items not found or unclear
+6. Professional English clarification questions for GoldBug US
+7. Professional English questions/action requests for vendor/factory
+8. Factory/sample checklist
+9. Professional English follow-up email
+
+LANGUAGE RULE
+Internal analysis may be Vietnamese. All external-facing questions, requests and emails must be professional English.
+
+ACCURACY RULES
+- Do not guess specifications.
+- Preserve units and values exactly.
+- If not found, write "Not found in provided data".
+- If unclear, write "Need confirmation".
+- Separate actual changes from inferred impact.
+- Human review required before external use.
+
+SECURITY
+Do not expose customer/vendor/style/price information unless approved or anonymized.</pre>
+            </div>
+            <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">So sánh Version A và Version B trong Project.
+Output:
+1. Vietnamese executive summary
+2. Change comparison table: item / old / new / impact / action
+3. Development and QA/factory risks
+4. Professional English questions to GoldBug US
+5. Professional English questions to factory/vendor
+6. Factory checklist
+7. Professional English follow-up email
+
+Không đoán spec. Giữ nguyên đơn vị. Nếu thiếu, ghi "Need confirmation".</pre>
+            </div>
+            <p class="copy-hint">💡 Thêm 5 sources: PD workflow guide · blank comparison template · reviewed example · older version · newer version.</p>
+          </div>
+        </details>
     </div><!-- /.demo-guide-card wf2 -->
 
     <!-- ══ CASE 3 — WF3 ══ -->
@@ -1004,6 +1795,58 @@ Rules:
           </div>
         </div>
       </details>
+        <details class="demo-method">
+          <summary>
+            <span class="method-dot project"></span>
+            ChatGPT Project — <em>Redbug QC Inspection Assistant</em>
+          </summary>
+          <div class="method-body">
+            <p>Dùng khi cần xử lý inspection report thường xuyên. Project giữ instruction + defect template để không setup lại mỗi lần.</p>
+            <p class="prompt-label">Project Instructions:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">You are Redbug QC Inspection Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese inspection summary
+2. Defect table
+3. Shipment, quality and communication risk
+4. Possible causes clearly marked as hypotheses
+5. Professional English questions to factory/vendor
+6. Corrective Action Request
+7. Professional English factory follow-up email
+8. Professional English short update to GoldBug US
+9. Vietnamese internal briefing
+
+RULES
+- Do not decide pass/fail unless explicitly supported.
+- Do not invent defect quantities, AQL results or shipment status.
+- If uncertain, write "Need QC confirmation".
+- Distinguish observed evidence from possible root cause.
+- Human review required before external use.
+
+LANGUAGE
+Internal analysis: Vietnamese.
+External factory/vendor/GoldBug US communication: professional English.</pre>
+            </div>
+            <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">Dựa trên inspection report / log trong Project, hãy tạo:
+1. Vietnamese inspection summary
+2. Defect table
+3. Risk assessment
+4. Professional English factory questions
+5. Corrective Action Request
+6. Professional English email to factory/vendor
+7. Professional English GoldBug US update
+8. Vietnamese internal briefing
+
+Không tự bịa pass/fail, defect quantity hoặc AQL result.</pre>
+            </div>
+            <p class="copy-hint">💡 Thêm 5 sources: inspection workflow/AQL guide · blank output template · reviewed defect example · anonymized report · current report.</p>
+          </div>
+        </details>
     </div><!-- /.demo-guide-card wf3 -->
 
     <!-- ══ CASE 4 — WF4/WF6 ══ -->
@@ -1168,6 +2011,57 @@ Rules:
           </div>
         </div>
       </details>
+        <details class="demo-method">
+          <summary>
+            <span class="method-dot project"></span>
+            ChatGPT Project — <em>Redbug CAPA &amp; Factory Risk Assistant</em>
+          </summary>
+          <div class="method-body">
+            <p>Dùng khi cần review và cải thiện CAPA thường xuyên. Project giữ instruction + blank CAPA template để không setup lại mỗi lần.</p>
+            <p class="prompt-label">Project Instructions:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">You are Redbug CAPA &amp; Factory Risk Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese finding summary
+2. Current CAPA weakness review
+3. Root cause depth assessment
+4. Corrective action assessment
+5. Preventive action assessment
+6. Evidence gap
+7. Improved CAPA table
+8. Factory risk rating
+9. Professional English clarification/follow-up email
+
+RULES
+- Do not invent findings, laws, customer requirements or closure evidence.
+- If unclear, write "Need confirmation".
+- Corrective action must address the immediate issue.
+- Preventive action must address recurrence/system weakness.
+- Separate containment, corrective action and preventive action.
+- Human review required before external use.
+
+LANGUAGE
+Internal analysis: Vietnamese.
+External communication: professional English.</pre>
+            </div>
+            <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">Đánh giá CAPA hiện tại và tạo:
+1. Vietnamese finding summary
+2. Weakness review
+3. Root cause assessment
+4. Corrective / preventive action assessment
+5. Evidence gaps
+6. Improved CAPA
+7. Factory risk rating
+8. Professional English follow-up email</pre>
+            </div>
+            <p class="copy-hint">💡 Thêm 5 sources: CAPA methodology · blank CAPA template · reviewed CAPA example · anonymized audit finding · current CAPA file.</p>
+          </div>
+        </details>
     </div><!-- /.demo-guide-card wf4/wf6 -->
 
     <!-- ══ CASE 5 — WF5 ══ -->
@@ -1340,6 +2234,58 @@ Rules:
           <p class="copy-hint">💡 Gem này lý tưởng cho manager hoặc team lead để tạo weekly status update trong vài phút.</p>
         </div>
       </details>
+        <details class="demo-method">
+          <summary>
+            <span class="method-dot project"></span>
+            ChatGPT Project — <em>Redbug Management Dashboard Assistant</em>
+          </summary>
+          <div class="method-body">
+            <p>Dùng khi cần tổng hợp WIP + DEV + inspection log thành weekly briefing. Project giữ instruction + output template để không setup lại mỗi lần.</p>
+            <p class="prompt-label">Project Instructions:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">You are Redbug Management Dashboard Assistant.
+
+ALWAYS PRODUCE
+1. Vietnamese management executive summary
+2. Priority list
+3. Shipment/timeline risks
+4. Factory/item risk ranking
+5. Development bottlenecks
+6. Today's action list
+7. Missing information/conflicts
+8. Professional English questions for GoldBug US/vendor/factory
+9. Professional English management update to GoldBug US
+
+RULES
+- Use only provided data.
+- Do not invent numbers.
+- Flag conflicts between files.
+- Separate facts, risks and recommendations.
+- Show evidence/source for major risks.
+- Human review required before external use.
+
+LANGUAGE
+Internal dashboard and explanation: Vietnamese.
+External questions and updates: professional English.</pre>
+            </div>
+            <p class="prompt-label" style="margin-top:10px;">Starter Prompt:</p>
+            <div class="prompt-block-wrapper">
+              <button class="copy-prompt-btn" type="button" aria-label="Copy prompt" title="Copy prompt"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+              <pre class="prompt-block">Tổng hợp WIP, DEV tracking và inspection / daily log trong Project để tạo:
+1. Vietnamese executive summary
+2. Priority list
+3. Shipment / timeline risk
+4. Factory / item risk ranking
+5. Development bottlenecks
+6. Today's action list
+7. Data conflicts / missing information
+8. Professional English questions to external parties
+9. Professional English GoldBug US update</pre>
+            </div>
+            <p class="copy-hint">💡 Thêm 5 sources: dashboard guide · blank output template · WIP file · DEV tracking file · inspection/daily log.</p>
+          </div>
+        </details>
     </div><!-- /.demo-guide-card wf5 -->
 
   </div><!-- /.container -->
